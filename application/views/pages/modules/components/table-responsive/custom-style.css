@@ -1,0 +1,13 @@
+
+
+
+@media (max-width: 768px) {
+  .responsive-table tr {
+    display: block;
+  }
+
+  .responsive-table td {
+    display: block;
+    width: 100%;
+  }
+}
