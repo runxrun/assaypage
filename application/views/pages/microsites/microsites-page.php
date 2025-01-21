@@ -85,6 +85,7 @@
                         </div>
                         <div class="col-12">
                           <div class="pt-2 px-3 pb-3 text-secondary fs-8 ">
+                            <div class="text-truncate"><?php echo $first['color']; ?></div>
                             <div class="text-truncate"><?php echo $first['site']; ?></div>
                             <div class="text-truncate"><?php echo $first['manage']; ?></div>
                           </div>
@@ -147,6 +148,17 @@
                         </div>
                         <div class="col-12">
                           <div class="pt-2 px-3 pb-3 text-secondary fs-8 ">
+                            <div class="d-flex pb-1">
+                              <div
+                                style="
+                                  background-color: <?php echo $microsite['color']; ?>;
+                                  width: 16px;
+                                  height: 16px;
+                                  border-radius: 50%;
+                                ">
+                              </div>
+                              <div class="ps-2 text-truncate"><?php echo $microsite['color']; ?></div>
+                            </div>
                             <div class="text-truncate"><?php echo $microsite['site']; ?></div>
                             <div class="text-truncate"><?php echo $microsite['manage']; ?></div>
                           </div>
