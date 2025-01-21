@@ -6,24 +6,28 @@ $microsites_first = [
     'site' => 'https://www.artotelsuitesbianti.com',
     'manage' => 'https://manage.artotelsuitesbianti.com',
     'code' => 'CL238',
+    'color' => '#000000'
   ],
   [
     'name' => 'ARTOTEL Gelora Senayan',
     'site' => 'https://www.artotelgelorasenayan.com',
     'manage' => 'https://manage.artotelgelorasenayan.com',
     'code' => 'CL240',
+    'color' => '#8f7757'
   ],
   [
     'name' => 'ARTOTEL Thamrin Jakarta',
     'site' => 'https://www.artotelthamrinjakarta.com',
     'manage' => 'https://manage.artotelthamrinjakarta.com',
     'code' => 'CL241',
+    'color' => '#9e007e'
   ],
   [
     'name' => 'Mangkuluhur ARTOTEL Suites',
     'site' => 'https://www.mangkuluhurartotelsuites.com',
     'manage' => 'https://manage.mangkuluhurartotelsuites.com',
     'code' => 'CL239',
+    'color' => '#373839'
   ],
 ];
 
