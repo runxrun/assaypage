@@ -1,121 +1,204 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
-$microsites = [
-  [
-    'site' => 'https://www.artotelsimpangtemu.com',
-    'manage' => 'https://manage.artotelsimpangtemu.com',
-    'code' => 'CL250'
-  ],
-  [
-    'site' => 'https://www.artotelhanimanubud.com',
-    'manage' => 'https://manage.artotelhanimanubud.com',
-    'code' => 'CL251'
-  ],
-  [
-    'site' => 'https://www.artotelsanurbali.com',
-    'manage' => 'https://manage.artotelsanurbali.com',
-    'code' => 'CL245'
-  ],
-  [
-    'site' => 'https://www.artotelbatam.com',
-    'manage' => 'https://manage.artotelbatam.com',
-    'code' => 'CL253'
-  ],
-  [
-    'site' => 'https://www.artotelyogyakarta.com',
-    'manage' => 'https://manage.artotelyogyakarta.com',
-    'code' => 'CL254'
-  ],
-  [
-    'site' => 'https://www.artotelgajahmadasemarang.com',
-    'manage' => 'https://manage.artotelgajahmadasemarang.com',
-    'code' => 'CL255'
-  ],
-  [
-    'site' => 'https://www.vuepalaceartotelcurated.com',
-    'manage' => 'https://manage.vuepalaceartotelcurated.com',
-    'code' => 'CL256'
-  ],
-  [
-    'site' => 'https://www.debragabandungbyartotel.com',
-    'manage' => 'https://manage.debragabandungbyartotel.com',
-    'code' => 'CL257'
-  ],
-  [
-    'site' => 'https://www.thereizsuitesmedanartotelcurated.com',
-    'manage' => 'https://manage.thereizsuitesmedanartotelcurated.com',
-    'code' => 'CL258'
-  ],
-  [
-    'site' => 'https://www.thegreenpeakartotelcurated.com',
-    'manage' => 'https://manage.thegreenpeakartotelcurated.com',
-    'code' => 'CL259'
-  ],
-  [
-    'site' => 'https://www.viverehotelartotelcurated.com',
-    'manage' => 'https://manage.viverehotelartotelcurated.com',
-    'code' => 'CL260'
-  ],
-  [
-    'site' => 'https://www.mierskuninganartotelcurated.com',
-    'manage' => 'https://manage.mierskuninganartotelcurated.com',
-    'code' => 'CL261'
-  ],
-  [
-    'site' => 'https://www.sparkslifejakartaartotelcurated.com',
-    'manage' => 'https://manage.sparkslifejakartaartotelcurated.com',
-    'code' => 'CL262'
-  ],
-  [
-    'site' => 'https://www.artotelcasacikarang.com',
-    'manage' => 'https://manage.artotelcasacikarang.com',
-    'code' => 'CL263'
-  ],
-  [
-    'site' => 'https://www.artotelcasakuningan.com',
-    'manage' => 'https://manage.artotelcasakuningan.com',
-    'code' => 'CL264'
-  ],
-  [
-    'site' => 'https://www.artoteltssuites.com',
-    'manage' => 'https://manage.artoteltssuites.com',
-    'code' => 'CL265'
-  ],
-  [
-    'site' => 'https://www.artotelcabinbromo.com',
-    'manage' => 'https://manage.artotelcabinbromo.com',
-    'code' => 'CL246'
-  ],
-  [
-    'site' => 'https://www.roomsincsemarang.com',
-    'manage' => 'https://manage.roomsincsemarang.com',
-    'code' => 'CL267'
-  ],
-  [
-    'site' => 'https://www.roomsincbandung.com',
-    'manage' => 'https://manage.roomsincbandung.com',
-    'code' => 'CL268'
-  ],
-  [
-    'site' => 'https://www.myzehotelsumenep.com',
-    'manage' => 'https://manage.myzehotelsumenep.com',
-    'code' => 'CL269'
-  ]
-];
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/application/scss/custom.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+</head>
 
-echo '<div class="container py-4">';
-echo '<div class="row g-3">';
-foreach ($microsites as $microsite) {
-  echo '<div class="col-md-4">
-    <div class="text-white fs-7">
-    
-        <h5 class="card-title">' . $microsite['code'] . '</h5>
-        <p class="card-text">' . $microsite['site'] . '</p>
-        <a href="' . $microsite['site'] . '" class="btn btn-outline-primary fs-8" target="_blank">Visit Site</a>
-        <a href="' . $microsite['manage'] . '" class="btn btn-outline-primary fs-8" target="_blank">Manage Site</a>
+<body class="bg-light">
+  <?php
+  include 'microsites-data.php';
+  ?>
+  <div class="bg-dark">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-auto">
+          <div class="fs-5 fw-bold text-white">
+            MICROSITES
+          </div>
+        </div>
       </div>
-  </div>';
-}
-echo '<div class="col-12"><a href="https://drive.google.com/drive/folders/1OkjBuFs7x4bwlIOFA7HiemUN1RXPshE6" target="_blank">Google Drive</a></div>';
-echo '</div>';
-echo '</div>';
+    </div>
+  </div>
+  <div class="py-4">
+    <div class="container py-4">
+      <div class="pb-4">
+        <div class="row g-2" role="tablist">
+          <div class="col-auto">
+            <button
+              class="btn fs-7 text-dark rounded-0 px-4 active"
+              data-bs-toggle="tab"
+              data-bs-target="#second-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="second-tab-pane"
+              aria-selected="true">
+              Generation #2
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn fs-7 text-dark rounded-0 px-4"
+              data-bs-toggle="tab"
+              data-bs-target="#first-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="first-tab-pane"
+              aria-selected="false">
+              Generation #1
+            </button>
+          </div>
+        </div>
+        <div class="tab-content pt-4">
+          <div
+            class="tab-pane fade"
+            id="first-tab-pane"
+            role="tabpanel"
+            aria-labelledby="first-tab"
+            tabindex="0">
+            <div class="row g-3">
+              <?php
+              foreach ($microsites_first as $first) {
+              ?>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="d-flex flex-wrap flex-column border rounded-0 bg-white h-100">
+
+                    <div class="w-100">
+                      <div class="row g-0 justify-content-between">
+                        <div class="col-8">
+                          <div class="pt-2 px-3 fs-6 fw-bold text-dark text-break">
+                            <?php echo $first['name']; ?>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="pt-2 px-3 fs-7 text-secondary">
+                            <?php echo $first['code']; ?>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="pt-2 px-3 pb-3 text-secondary fs-8 ">
+                            <div class="text-truncate"><?php echo $first['site']; ?></div>
+                            <div class="text-truncate"><?php echo $first['manage']; ?></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-auto w-100">
+                      <div class="d-flex">
+                        <div class="w-100 border-top">
+                          <a
+                            href="<?php echo $first['site']; ?>"
+                            class="btn btn-outline-primary border-0 w-100 fs-8 rounded-0 py-2"
+                            target="_blank">
+                            Website
+                          </a>
+                        </div>
+                        <div class="w-100 border-top border-start">
+                          <a
+                            href="<?php echo $first['manage']; ?>"
+                            class="btn btn-outline-primary border-0 w-100 fs-8 rounded-0 py-2"
+                            target="_blank">
+                            Manage
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <?php
+              }
+              ?>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade show active"
+            id="second-tab-pane"
+            role="tabpanel"
+            aria-labelledby="second-tab"
+            tabindex="0">
+
+
+            <div class="row g-3">
+              <?php
+              foreach ($microsites as $microsite) {
+              ?>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="d-flex flex-wrap flex-column border rounded-0 bg-white h-100">
+
+                    <div class="w-100">
+                      <div class="row g-0 justify-content-between">
+                        <div class="col-8">
+                          <div class="pt-2 px-3 fs-6 fw-bold text-dark text-break">
+                            <?php echo $microsite['name']; ?>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="pt-2 px-3 fs-7 text-secondary">
+                            <?php echo $microsite['code']; ?>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="pt-2 px-3 pb-3 text-secondary fs-8 ">
+                            <div class="text-truncate"><?php echo $microsite['site']; ?></div>
+                            <div class="text-truncate"><?php echo $microsite['manage']; ?></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-auto w-100">
+                      <div class="d-flex">
+                        <div class="w-100 border-top">
+                          <a
+                            href="<?php echo $microsite['site']; ?>"
+                            class="btn btn-outline-primary border-0 w-100 fs-8 rounded-0 py-2"
+                            target="_blank">
+                            Website
+                          </a>
+                        </div>
+                        <div class="w-100 border-top border-start">
+                          <a
+                            href="<?php echo $microsite['manage']; ?>"
+                            class="btn btn-outline-primary border-0 w-100 fs-8 rounded-0 py-2"
+                            target="_blank">
+                            Manage
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <?php
+              }
+              ?>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-4">
+
+      </div>
+      <div class="py-4">
+        <span class="fs-8 text-secondary">
+          Information about the microsites can be found
+        </span>
+        <a
+          href="https://drive.google.com/drive/folders/1OkjBuFs7x4bwlIOFA7HiemUN1RXPshE6"
+          class="fs-8 text-decoration-underline text-secondary"
+          target="_blank">
+          click here
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

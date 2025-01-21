@@ -27,5 +27,11 @@ $pathData = $_SERVER['REQUEST_URI'];
 $segment = isset($pathData) ? explode('/', preg_replace('~^/?(.*?)/?$~', '$1', $pathData)) : array();
 // $_dataLvl=0;
 // $chkSegment=strtoupper($segment[$_dataLvl]);
+// echo $segment[0];
+
+if (strtoupper($segment[0]) === 'MICROSITES') {
+  require_once("application/views/pages/microsites/microsites-page.php");
+  return;
+}
 
 require_once("application/views/template.php");
