@@ -16,6 +16,7 @@
 <body class="bg-light">
   <?php
   include 'microsites-data.php';
+  include 'microsites-template.php';  
   ?>
   <div class="bg-dark">
     <div class="container py-3">
@@ -66,65 +67,14 @@
             tabindex="0">
             <div class="row g-3">
               <?php
-              foreach ($microsites_first as $first) {
-              ?>
-                <div class="col-12 col-md-6 col-lg-4">
-                  <div class="d-flex flex-wrap flex-column border rounded-0 bg-white h-100">
-
-                    <div class="w-100">
-                      <div class="row g-0 justify-content-between">
-                        <div class="col-8">
-                          <div class="pt-2 px-3 fs-6 fw-bold text-dark text-break">
-                            <?php echo $first['name']; ?>
-                          </div>
-                        </div>
-                        <div class="col-auto">
-                          <div class="pt-2 px-3 fs-7 text-secondary">
-                            <?php echo $first['code']; ?>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="pt-2 px-3 pb-3 text-secondary fs-8">
-                            <div class="d-flex align-items-center pb-1">
-                              <div
-                                style="
-                                  background-color: <?php echo $first['color']; ?>;
-                                  width: 16px;
-                                  height: 16px;
-                                  border-radius: 50%;
-                                ">
-                              </div>
-                              <div class="ps-2 text-truncate"><?php echo $first['color']; ?></div>
-                            </div>
-                            <div class="text-truncate"><?php echo $first['site']; ?></div>
-                            <div class="text-truncate"><?php echo $first['manage']; ?></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mt-auto w-100">
-                      <div class="d-flex">
-                        <div class="w-100 border-top">
-                          <a
-                            href="<?php echo $first['site']; ?>"
-                            class="btn btn-outline-primary border-0 w-100 fs-8 rounded-0 py-2"
-                            target="_blank">
-                            Website
-                          </a>
-                        </div>
-                        <div class="w-100 border-top border-start">
-                          <a
-                            href="<?php echo $first['manage']; ?>"
-                            class="btn btn-outline-primary border-0 w-100 fs-8 rounded-0 py-2"
-                            target="_blank">
-                            Manage
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              <?php
+              foreach ($microsites_first as $microsite) {
+                $output = $template;
+                $output = str_replace('{{name}}', $microsite['name'], $output);
+                $output = str_replace('{{code}}', $microsite['code'], $output);
+                $output = str_replace('{{color}}', $microsite['color'], $output);
+                $output = str_replace('{{site}}', $microsite['site'], $output);
+                $output = str_replace('{{manage}}', $microsite['manage'], $output);
+                echo $output;
               }
               ?>
             </div>
@@ -135,69 +85,16 @@
             role="tabpanel"
             aria-labelledby="second-tab"
             tabindex="0">
-
-
             <div class="row g-3">
               <?php
               foreach ($microsites as $microsite) {
-              ?>
-                <div class="col-12 col-md-6 col-lg-4">
-                  <div class="d-flex flex-wrap flex-column border rounded-0 bg-white h-100">
-
-                    <div class="w-100">
-                      <div class="row g-0 justify-content-between">
-                        <div class="col-8">
-                          <div class="pt-2 px-3 fs-6 fw-bold text-dark text-break">
-                            <?php echo $microsite['name']; ?>
-                          </div>
-                        </div>
-                        <div class="col-auto">
-                          <div class="pt-2 px-3 fs-7 text-secondary">
-                            <?php echo $microsite['code']; ?>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="pt-2 px-3 pb-3 text-secondary fs-8">
-                            <div class="d-flex align-items-center pb-1">
-                              <div
-                                style="
-                                  background-color: <?php echo $microsite['color']; ?>;
-                                  width: 16px;
-                                  height: 16px;
-                                  border-radius: 50%;
-                                ">
-                              </div>
-                              <div class="ps-2 text-truncate"><?php echo $microsite['color']; ?></div>
-                            </div>
-                            <div class="text-truncate"><?php echo $microsite['site']; ?></div>
-                            <div class="text-truncate"><?php echo $microsite['manage']; ?></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mt-auto w-100">
-                      <div class="d-flex">
-                        <div class="w-100 border-top">
-                          <a
-                            href="<?php echo $microsite['site']; ?>"
-                            class="btn btn-outline-primary border-0 w-100 fs-8 rounded-0 py-2"
-                            target="_blank">
-                            Website
-                          </a>
-                        </div>
-                        <div class="w-100 border-top border-start">
-                          <a
-                            href="<?php echo $microsite['manage']; ?>"
-                            class="btn btn-outline-primary border-0 w-100 fs-8 rounded-0 py-2"
-                            target="_blank">
-                            Manage
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              <?php
+                $output = $template;
+                $output = str_replace('{{name}}', $microsite['name'], $output);
+                $output = str_replace('{{code}}', $microsite['code'], $output);
+                $output = str_replace('{{color}}', $microsite['color'], $output);
+                $output = str_replace('{{site}}', $microsite['site'], $output);
+                $output = str_replace('{{manage}}', $microsite['manage'], $output);
+                echo $output;
               }
               ?>
             </div>
@@ -220,7 +117,69 @@
       </div>
     </div>
   </div>
-  </div>
+
+  <?php
+
+
+  // $template = '
+  // <div class="col-12 col-md-6 col-lg-4">
+  //     <div class="d-flex flex-wrap flex-column border rounded-0 bg-white h-100">
+  //       <div class="w-100">
+  //         <div class="row g-0 justify-content-between">
+  //           <div class="col-8">
+  //             <div class="pt-2 px-3 fs-6 fw-bold text-dark text-break">
+  //               ' . $microsite['name'] . '
+  //             </div>
+  //           </div>
+  //           <div class="col-auto">
+  //             <div class="pt-2 px-3 fs-7 text-secondary">
+  //               ' . $microsite['code'] . '
+  //             </div>
+  //           </div>
+  //           <div class="col-12">
+  //             <div class="pt-2 px-3 pb-3 text-secondary fs-8">
+  //               <div class="d-flex align-items-center pb-1">
+  //                 <div
+  //                   style="
+  //                     background-color: ' . $microsite['color'] . ';
+  //                     width: 16px;
+  //                     height: 16px;
+  //                     border-radius: 50%;
+  //                   ">
+  //                 </div>
+  //                 <div class="ps-2 text-truncate">' . $microsite['color'] . '</div>
+  //               </div>
+  //               <div class="text-truncate">' . $microsite['site'] . '</div>
+  //               <div class="text-truncate">' . $microsite['manage'] . '</div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </div>
+  //       <div class="mt-auto w-100">
+  //         <div class="d-flex">
+  //           <div class="w-100 border-top">
+  //             <a
+  //               href="' . $microsite['site'] . '"
+  //               class="btn btn-outline-primary border-0 w-100 fs-8 rounded-0 py-2"
+  //               target="_blank">
+  //               Website
+  //             </a>
+  //           </div>
+  //           <div class="w-100 border-top border-start">
+  //             <a
+  //               href="' . $microsite['manage'] . '"
+  //               class="btn btn-outline-primary border-0 w-100 fs-8 rounded-0 py-2"
+  //               target="_blank">
+  //               Manage
+  //             </a>
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   </div>
+  // ';
+
+  ?>
 </body>
 
 </html>

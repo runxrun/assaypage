@@ -97,6 +97,15 @@ body {
   background-color: rgba(80, 80, 80, 0.2);
 }
 
+.text-rn-link {
+  color: #6c757d;
+  text-decoration: none;
+  &:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .rsp-opacity-50 {
     opacity: 0.5;
