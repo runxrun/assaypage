@@ -76,50 +76,50 @@ $microsites = [
   ],
   [
     'name' => 'Vue Palace ARTOTEL Curated',
-    'site' => 'https://www.vuepalaceartotelcurated.com',
-    'manage' => 'https://manage.vuepalaceartotelcurated.com',
+    'site' => 'https://www.vuepalace.com',
+    'manage' => 'https://manage.vuepalace.com',
     'code' => 'CL256',
     'color' => '#002E5D'
   ],
   [
     'name' => 'De Braga Bandung by ARTOTEL',
-    'site' => 'https://www.debragabandungbyartotel.com',
-    'manage' => 'https://manage.debragabandungbyartotel.com',
+    'site' => 'https://www.debragabandung.com',
+    'manage' => 'https://manage.debragabandung.com',
     'code' => 'CL257',
     'color' => '#145e8c'
   ],
   [
     'name' => 'The Reiz Suites Medan ARTOTEL Curated',
-    'site' => 'https://www.thereizsuitesmedanartotelcurated.com',
-    'manage' => 'https://manage.thereizsuitesmedanartotelcurated.com',
+    'site' => 'https://www.thereizsuitesmedan.com',
+    'manage' => 'https://manage.thereizsuitesmedan.com',
     'code' => 'CL258',
     'color' => '#646469'
   ],
   [
     'name' => 'The Green Peak ARTOTEL Curated',
-    'site' => 'https://www.thegreenpeakartotelcurated.com',
-    'manage' => 'https://manage.thegreenpeakartotelcurated.com',
+    'site' => 'https://www.thegreenpeak.com',
+    'manage' => 'https://manage.thegreenpeak.com',
     'code' => 'CL259',
     'color' => '#798545'
   ],
   [
     'name' => 'Vivere Hotel ARTOTEL Curated',
-    'site' => 'https://www.viverehotelartotelcurated.com',
-    'manage' => 'https://manage.viverehotelartotelcurated.com',
+    'site' => 'https://www.viverehotel.com',
+    'manage' => 'https://manage.viverehotel.com',
     'code' => 'CL260',
     'color' => '#6FA491'
   ],
   [
     'name' => 'Miers Kuningan ARTOTEL Curated',
-    'site' => 'https://www.mierskuninganartotelcurated.com',
-    'manage' => 'https://manage.mierskuninganartotelcurated.com',
+    'site' => 'https://www.mierskuningan.com',
+    'manage' => 'https://manage.mierskuningan.com',
     'code' => 'CL261',
     'color' => '#1D3438'
   ],
   [
     'name' => 'Sparks Life Jakarta ARTOTEL Curated',
-    'site' => 'https://www.sparkslifejakartaartotelcurated.com',
-    'manage' => 'https://manage.sparkslifejakartaartotelcurated.com',
+    'site' => 'https://www.sparkslifejakarta.com',
+    'manage' => 'https://manage.sparkslifejakarta.com',
     'code' => 'CL262',
     'color' => '#5e833a'
   ],
