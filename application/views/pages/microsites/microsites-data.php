@@ -104,8 +104,8 @@ $microsites = [
   ],
   [
     'name' => 'Vivere Hotel ARTOTEL Curated',
-    'site' => 'https://www.viverehotel.com',
-    'manage' => 'https://manage.viverehotel.com',
+    'site' => 'https://www.viverehotelserpong.com',
+    'manage' => 'https://manage.viverehotelserpong.com',
     'code' => 'CL260',
     'color' => '#6FA491'
   ],
