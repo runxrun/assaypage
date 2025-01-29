@@ -34,4 +34,10 @@ if (strtoupper($segment[0]) === 'MICROSITES') {
   return;
 }
 
+if (strtoupper($segment[0]) === 'MUSICAL-INSTRUMENT') {
+  $pathURL = '/application/views/pages/musical-instrument/';
+  require_once("application/views/pages/musical-instrument/template.php");
+  return;
+}
+
 require_once("application/views/template.php");
