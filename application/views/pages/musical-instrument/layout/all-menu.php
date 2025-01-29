@@ -6,10 +6,14 @@
     </button>
   </div>
   <div class="offcanvas-body p-0">
-
-    <?php foreach ($dataSubMenu as $item) { ?>
+    <?php 
+      foreach ($dataSubMenu as $item) { 
+      $categoryName = strtolower(str_replace(' ','-',$item['name']));
+    ?>
       <div class="p-0">
-        <a href="#" class="d-flex py-2 px-3 text-decoration-none rn-submenu-link">
+        <a 
+          href="/musical-instrument/category/<?php echo $categoryName;?>"
+          class="d-flex py-2 px-3 text-decoration-none rn-submenu-link">
           <div class="w-100 fs-7">
             <?php echo $item['name']; ?>
           </div>
@@ -19,7 +23,5 @@
         </a>
       </div>
     <?php } ?>
-
-
   </div>
 </div>

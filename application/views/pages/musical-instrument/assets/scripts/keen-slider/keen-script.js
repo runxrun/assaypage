@@ -99,16 +99,24 @@ var slider = new KeenSlider("#keen-slider-submenu", {
   slides: { perView: "auto", spacing: 10, overflow: false },
 });
 
+var slider = new KeenSlider(
+  "#keen-slider-banner",
+  {
+    loop: true,
+    rtl: false,
+    slides: {
+      perView: 1,
+      spacing: 0,
+    },
+  },
+  [navigation]
+);
 
 var slider = new KeenSlider(
   "#keen-slider-card",
   {
     loop: true,
     rtl: false,
-    // slides: {
-    //   perView: 4,
-    //   spacing: 20,
-    // },
     breakpoints: {
       "(min-width: 1441px)": {
         slides: {
