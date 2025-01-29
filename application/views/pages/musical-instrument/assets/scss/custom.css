@@ -1,8 +1,11 @@
 .bg-background {
-    background-color: #dee2e6;
+    background-color: #131922;
 }
 .bg-header {
     background-color: #131922;
+}
+.bg-footer {
+    background-color: #232F3D;
 }
 .fs-7 {
     font-size: 0.9rem;
