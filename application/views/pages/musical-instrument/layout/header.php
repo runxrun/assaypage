@@ -14,7 +14,7 @@
         </div>
         <div class="col-auto">
           <div class="fs-6 fw-bold text-white">
-            MENU
+            &nbsp;
           </div>
         </div>
       </div>
@@ -29,8 +29,8 @@
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasExample">
             <div class="d-flex">
-              <div class="pe-2 fs-7 text-white"><i class="fa-solid fa-bars"></i></div>
-              <div class="pe-0 fs-7 text-white fw-bold">All</div>
+              <div class="pe-2 fs-8 text-white"><i class="fa-solid fa-bars"></i></div>
+              <div class="pe-0 fs-8 text-white fw-bold">All</div>
             </div>
           </button>
         </div>
@@ -48,7 +48,7 @@
                     max-width: <?php echo strlen($item['name']) * 10 + 12; ?>px;
                   ">
                   <button 
-                    class="btn py-2 border-0 text-white fs-7 text-nowrap w-100" 
+                    class="btn py-2 border-0 text-white fs-8 text-nowrap w-100" 
                     onclick="window.location.href='/musical-instrument/category/<?php echo $categoryName;?>';">
                     <?php echo $item['name']; ?>
                   </button>

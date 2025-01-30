@@ -124,7 +124,7 @@ $microsites = [
     'color' => '#5e833a'
   ],
   [
-    'name' => 'ARTOTEL Casacikarang',
+    'name' => 'ARTOTEL Casa Cikarang',
     'site' => 'https://www.artotelcasacikarang.com',
     'manage' => 'https://manage.artotelcasacikarang.com',
     'code' => 'CL263',

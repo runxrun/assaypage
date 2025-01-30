@@ -7,6 +7,9 @@ switch (strtoupper($segment[1])) {
 	case 'CATEGORY':
 		$currentPage = __DIR__ . '/pages/result/result-page.php';
 		break;
+	case 'PRODUCT':
+		$currentPage = __DIR__ . '/pages/description/description-page.php';
+		break;
 	default:
 		echo '404';
 		break;

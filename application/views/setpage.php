@@ -37,10 +37,6 @@ switch (strtoupper($segment[0])) {
       $title = "Modules - モジュール";
     }
     break;
-  case "MICROSITES":
-    $page = __DIR__ . '/pages/microsites/microsites-page.php';
-    $title = "Microsites - マイクロサイト";
-    break;
   default:
     $page = __DIR__ . '/pages/filenotfound/filenotfound.php';
     break;

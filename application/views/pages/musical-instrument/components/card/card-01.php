@@ -12,8 +12,7 @@
         </div>
         <div class="fs-7 text-secondary">
           Nam rerum voluptates magnam! Ipsam, voluptatum exercitationem
-          voluptatem sequi praesentium doloremque inventore numquam
-          
+          voluptatem sequi praesentium doloremque inventore numquam          
         </div>
       </div>
     </div>
@@ -21,7 +20,9 @@
       <div class="p-3">
         <div class="row g-2 align-items-start justify-content-between">
           <div class="col-auto">
-            <button class="btn btn-warning px-4 fs-8 rounded-pill">
+            <button 
+              class="btn btn-warning px-4 fs-8 rounded-pill" 
+              onclick="window.location.href = '<?php echo '/musical-instrument/product/' . $item['id']; ?>'">
               View more
             </button>
           </div>

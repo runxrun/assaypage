@@ -40,4 +40,10 @@ if (strtoupper($segment[0]) === 'MUSICAL-INSTRUMENT') {
   return;
 }
 
+if (strtoupper($segment[0]) === 'AIR-TICKET-INQUIRY') {
+  // $pathURL = '/application/views/pages/air-ticket-inquiry/';
+  require_once("application/views/pages/air-ticket-information/mail-form.php");
+  return;
+}
+
 require_once("application/views/template.php");

@@ -55,7 +55,7 @@
                 </div>
                 -->
                 <div class="pt-2 pb-2 ">
-                  <a href="#" class="d-block fs-6 text-decoration-none fw-bold rn-result-link">
+                  <a href="/musical-instrument/product/<?php echo $i; ?>" class="d-block fs-6 text-decoration-none fw-bold rn-result-link">
                     Enya Nova Go Mini Acoustic Guitar Carbon Integral Molded 1/4 Size Mini Guitar Beginner Kit with Guitar Case (Black)
                   </a>
                 </div>
