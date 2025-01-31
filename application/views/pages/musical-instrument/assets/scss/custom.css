@@ -132,6 +132,7 @@
   top: calc(100% + 5px);
   left: 0;
   right: 0;
+  font-size: 0.9rem;
 }
 
 .rn-autocomplete .autocomplete-items div {

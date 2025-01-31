@@ -26,6 +26,7 @@
   ?>
   <script src="<?php echo $pathURL . '/assets/scripts/keen-slider/keen-slider.min.js' ?>"></script>
   <script src="<?php echo $pathURL . '/assets/scripts/keen-slider/keen-script.js' ?>"></script>
+  <script src="<?php echo $pathURL . '/assets/scripts/autocomplete/auto-complete.js' ?>"></script>
 </body>
 
 </html>
