@@ -93,3 +93,60 @@
   left: auto;
   right: 5px;
 }
+
+
+
+
+
+
+.rn-autocomplete {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* .rn-autocomplete input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.rn-autocomplete input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.rn-autocomplete input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+} */
+
+.rn-autocomplete .autocomplete-items {
+  position: absolute;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  top: calc(100% + 5px);
+  left: 0;
+  right: 0;
+}
+
+.rn-autocomplete .autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.rn-autocomplete .autocomplete-items div strong{
+  color: #e77a06;
+}
+
+.rn-autocomplete .autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+.rn-autocomplete .autocomplete-active {
+  background-color: rgb(244, 244, 244) !important;
+}

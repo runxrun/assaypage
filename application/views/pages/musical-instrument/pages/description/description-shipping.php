@@ -1,4 +1,4 @@
-<div class="border-top pt-3">
+<div class="border-top pt-3" id="shipping">
   <div class="fs-5 fw-bold text-dark">
     Shipping & Delivery
   </div>
