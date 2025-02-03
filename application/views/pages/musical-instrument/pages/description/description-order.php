@@ -29,7 +29,7 @@
   </div>
 </div>
 
-<div class="row justify-content-between">
+<div class="row g-3 justify-content-between">
   <div class="col-auto">
     <div class="pb-1 fs-7 fw-bold text-dark">
       Important details:
@@ -42,7 +42,6 @@
     </div>
   </div>
   <div class="col-auto">
-
     <div class="d-flex justify-content-end">
       <div class="pe-2 fs-7 text-secondary">
         <i class="fa-solid fa-truck"></i>

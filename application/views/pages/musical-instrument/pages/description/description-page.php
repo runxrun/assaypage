@@ -16,11 +16,7 @@
   <div class="container">
     <div class="row g-0">
       <div class="col-12 col-lg-6 col-xl-5">
-        <div class="rn-sticky">
-          <div class="py-4 pe-md-4">
-            <?php include('description-gallery.php'); ?>
-          </div>
-        </div>
+        <?php include('description-gallery.php'); ?>
       </div>
       <div class="col-12 col-lg-6 col-xl-7">
         <div class="py-4">

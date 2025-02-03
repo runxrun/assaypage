@@ -66,7 +66,7 @@
     </div>
     <hr class="m-0 p-0 text-light opacity-25">
     <div class="pt-3 pb-4">
-      <div class="fs-8 text-end text-light">
+      <div class="fs-8 text-lg-end text-light">
         &copy; <?php echo date("Y"); ?>
         Musical Instrument Store.
         All rights reserved.

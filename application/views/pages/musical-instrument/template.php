@@ -21,11 +21,13 @@
   include_once(__DIR__ . '/mockup/data-submenu.php');
   include_once(__DIR__ . '/layout/header.php');
   include_once(__DIR__ . '/layout/all-menu.php');
+  include_once(__DIR__ . '/layout/side-panel.php');
   include_once($currentPage);
   include_once(__DIR__ . '/layout/footer.php');
   ?>
   <script src="<?php echo $pathURL . '/assets/scripts/keen-slider/keen-slider.min.js' ?>"></script>
-  <script src="<?php echo $pathURL . '/assets/scripts/keen-slider/keen-script.js' ?>"></script>
+  <script src="<?php echo $pathURL . '/assets/scripts/keen-slider/keen-function.js' ?>"></script>
+  <?php echo $scriptKeenSlider; ?>  
   <script src="<?php echo $pathURL . '/assets/scripts/autocomplete/auto-complete.js' ?>"></script>
 </body>
 

@@ -12,30 +12,35 @@
             </div>
           </button>
         </div>
-        <div class="col-8">
+        <div class="col-12 col-md-8 order-3 order-lg-2">
           <div class="d-flex gap-2">
             <div class="rn-autocomplete">
-              <input 
-                type="text" 
-                name="search" 
+              <input
+                type="text"
+                name="search"
                 id="searchAutoComplete"
-                class="form-control rounded-1 border-0 fs-7 py-2" 
-                placeholder="Search..." 
+                class="form-control rounded-1 border-0 fs-7 py-2"
+                placeholder="Search..."
                 autocomplete="off">
             </div>
             <div class="p-0">
               <button
-                type="button" 
-                class="btn btn-warning border-0 fs-7 py-2 h-100" 
+                type="button"
+                class="btn btn-warning border-0 fs-7 py-2 h-100"
                 onclick="window.location.href='/musical-instrument/category/<?php echo $categoryName; ?>';">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
           </div>
         </div>
-        <div class="col-auto">
+        <div class="col-auto order-2 order-md-3">
           <div class="fs-6 fw-bold text-white">
-            &nbsp;
+            <button 
+              class="btn btn-outline-light border-0 fs-7 py-2" 
+              data-bs-toggle="offcanvas" 
+              data-bs-target="#sidePanel">
+              <i class="fa-solid fa-bars"></i>
+            </button>
           </div>
         </div>
       </div>
