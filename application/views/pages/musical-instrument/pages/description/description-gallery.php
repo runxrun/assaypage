@@ -10,7 +10,10 @@
               background-repeat: no-repeat;
               background-position: center;
               background-size: auto 100%;
-            ">
+            "
+            data-bs-toggle="modal"
+            data-bs-target="#galleryModal">
+
             <img src="<?php echo $pathURL . 'assets/images/image-ratio-1-1.gif'; ?>" alt="" class="w-100">
           </button>
         </div>
@@ -37,22 +40,30 @@
   </div>
 </div>
 
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5 text-truncate">Yamaha 6-string series A1M acoustic electric guitar mahogany, tobacco sunburst, dreadnought cutaway TBS</h1>
+        <h1 class="modal-title fs-5 text-truncate">
+          Yamaha 6-string series A1M acoustic electric guitar mahogany,
+          tobacco sunburst, dreadnought cutaway TBS
+        </h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <div class="w-100 text-center p-0">
+          <img id="modalImage" class="img-fluid">
+        </div>
       </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  document.querySelectorAll('[data-bs-target="#galleryModal"]').forEach(button => {
+    button.addEventListener('click', function() {
+      const imageUrl = this.style.backgroundImage.slice(5, -2);
+      document.getElementById('modalImage').src = imageUrl;
+    });
+  });
+</script>
