@@ -74,6 +74,7 @@
                 $output = str_replace('{{color}}', $microsite['color'], $output);
                 $output = str_replace('{{site}}', $microsite['site'], $output);
                 $output = str_replace('{{manage}}', $microsite['manage'], $output);
+                $output = str_replace('{{logo}}', $microsite['logo'], $output);
                 echo $output;
               }
               ?>
@@ -94,6 +95,7 @@
                 $output = str_replace('{{color}}', $microsite['color'], $output);
                 $output = str_replace('{{site}}', $microsite['site'], $output);
                 $output = str_replace('{{manage}}', $microsite['manage'], $output);
+                $output = str_replace('{{logo}}', $microsite['logo'], $output);
                 echo $output;
               }
               ?>
