@@ -221,3 +221,466 @@ $microsites = [
     'color' => '#733D19'
   ]
 ];
+
+
+$microsites_3 = [
+  [
+    'name' => 'The Setumbu Experience, ARTOTEL Curated',
+    'site' => 'https://www.thesetumbuexperience.com',
+    'manage' => 'https://manage.thesetumbuexperience.com',
+    'logo' => 'the-setumbu-experience.png',
+    'logow' => 'the-setumbu-experience-w.png',
+    'code' => 'CLXXX',
+    'color' => '#1D4C6E'
+  ],
+  [
+    'name' => 'Grand DAFAM Braga Bandung',
+    'site' => 'https://www.granddafambraga.com',
+    'manage' => 'https://manage.granddafambraga.com',
+    'logo' => 'grand-dafam-braga.png',
+    'logow' => 'grand-dafam-braga-w.png',
+    'code' => 'CLXXX',
+    'color' => '#a88b57'
+  ],
+  [
+    'name' => 'Grand DAFAM Ancol Jakarta',
+    'site' => 'https://www.granddafamancol.com',
+    'manage' => 'https://manage.granddafamancol.com',
+    'logo' => 'grand-dafam-ancol.png',
+    'logow' => 'grand-dafam-ancol-w.png',
+    'code' => 'CLXXX',
+    'color' => '#a88b57'
+  ],
+  [
+    'name' => 'Laksana Hotel Solo Managed by Dafam',
+    'site' => 'https://www.laksanahotelsolo.com',
+    'manage' => 'https://manage.laksanahotelsolo.com',
+    'logo' => 'laksana-hotel-solo.png',
+    'logow' => 'laksana-hotel-solo-w.png',
+    'code' => 'CLXXX',
+    'color' => '#0055b8'
+  ],
+  [
+    'name' => 'DAFAM Rio Bandung',
+    'site' => 'https://www.dafamriobandung.com',
+    'manage' => 'https://manage.dafamriobandung.com',
+    'logo' => 'dafam-rio-bandung.png',
+    'logow' => 'dafam-rio-bandung-w.png',
+    'code' => 'CLXXX',
+    'color' => '#0055b8'
+  ],
+  [
+    'name' => 'DAFAM Resort Belitung',
+    'site' => 'https://www.dafamresortbelitung.com',
+    'manage' => 'https://manage.dafamresortbelitung.com',
+    'logo' => 'dafam-resort-belitung.png',
+    'logow' => 'dafam-resort-belitung-w.png',
+    'code' => 'CLXXX',
+    'color' => '#0055b8'
+  ],
+  [
+    'name' => 'Vasaka Hotel Jakarta Managed by Dafam',
+    'site' => 'https://www.vasakahoteljakarta.com',
+    'manage' => 'https://manage.vasakahoteljakarta.com',
+    'logo' => 'vasaka-hotel-jakarta.png',
+    'logow' => 'vasaka-hotel-jakarta-w.png',
+    'code' => 'CLXXX',
+    'color' => '#294b72'
+  ],
+  [
+    'name' => 'DAFAM Enkadeli Thamrin Jakarta',
+    'site' => 'https://www.dafamenkadelijakarta.com',
+    'manage' => 'https://manage.dafamenkadelijakarta.com',
+    'logo' => 'dafam-enkadeli-jakarta.png',
+    'logow' => 'dafam-enkadeli-jakarta-w.png',
+    'code' => 'CLXXX',
+    'color' => '#0055b8'
+  ],
+  [
+    'name' => 'DAFAM Express Jaksa Jakarta',
+    'site' => 'https://www.dafamexpressjaksajakarta.com',
+    'manage' => 'https://manage.dafamexpressjaksajakarta.com',
+    'logo' => 'dafam-express-jaksa-jakarta.png',
+    'logow' => 'dafam-express-jaksa-jakarta-w.png',
+    'code' => 'CLXXX',
+    'color' => '#0055b8'
+  ],
+  [
+    'name' => 'MAXONE Jayapura',
+    'site' => 'https://www.maxonejayapura.com',
+    'manage' => 'https://manage.maxonejayapura.com',
+    'logo' => 'maxone-jayapura.png',
+    'logow' => 'maxone-jayapura-w.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ]
+
+];
+
+
+
+
+$microsites_4 = [
+  [
+    'name' => 'MAXONE Resort Makassar',
+    'site' => 'https://www.maxoneresortmakasaar.com',
+    'manage' => 'https://manage.maxoneresortmakasaar.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'MAXONE Tidar Surabaya',
+    'site' => 'https://www.maxonetidar.com',
+    'manage' => 'https://manage.maxonetidar.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'MAXONE Loji Kridanggo Boyolali',
+    'site' => 'https://www.maxonelojikridanggo.com',
+    'manage' => 'https://manage.maxonelojikridanggo.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'MAXONE Vivo Palembang',
+    'site' => 'https://www.maxonevivopalembang.com',
+    'manage' => 'https://manage.maxonevivopalembang.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'MAXONE Kota Harapan Indah',
+    'site' => 'https://www.maxonekotaharapanindah.com',
+    'manage' => 'https://manage.maxonekotaharapanindah.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'MAXONE Premier Melawai',
+    'site' => 'https://www.maxonepremiermelawai.com',
+    'manage' => 'https://manage.maxonepremiermelawai.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'MAXONE Kramat',
+    'site' => 'https://www.maxonekramat.com',
+    'manage' => 'https://manage.maxonekramat.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'MAXONE Sabang',
+    'site' => 'https://www.maxonesabang.com',
+    'manage' => 'https://manage.maxonesabang.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'MAXONE  Platinum Hayam Wuruk',
+    'site' => 'https://www.maxoneplatinumhayamwuruk.com',
+    'manage' => 'https://manage.maxoneplatinumhayamwuruk.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'MAXONE Dumai',
+    'site' => 'https://www.maxonedumai.com',
+    'manage' => 'https://manage.maxonedumai.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'Zia Kuta',
+    'site' => 'https://www.ziakuta.com',
+    'manage' => 'https://manage.ziakuta.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#242e2b'
+  ],
+  [
+    'name' => 'NITE & DAY Laguna Bintan',
+    'site' => 'https://www.niteanddaylagunabintan.com',
+    'manage' => 'https://manage.niteanddaylagunabintan.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'NITE & DAY Melawi Nanga Pinoh',
+    'site' => 'https://www.niteanddaymelawi.com',
+    'manage' => 'https://manage.niteanddaymelawi.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'NITE & DAY Kedungdoro',
+    'site' => 'https://www.niteanddaykedungdoro.com',
+    'manage' => 'https://manage.niteanddaykedungdoro.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'NITE & DAY Surabaya - Gunungsari',
+    'site' => 'https://www.niteanddaygunungsari.com',
+    'manage' => 'https://manage.niteanddaygunungsari.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'NITE & DAY Candi Semarang',
+    'site' => 'https://www.niteanddaysemarang.com',
+    'manage' => 'https://manage.niteanddaysemarang.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'NITE & DAY Batam - Jodoh Square',
+    'site' => 'https://www.niteanddaybatam.com',
+    'manage' => 'https://manage.niteanddaybatam.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'NITE & DAY MDC Gadog',
+    'site' => 'https://www.niteanddaymdcgadog.com',
+    'manage' => 'https://manage.niteanddaymdcgadog.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'NITE & DAY Alam Sutera Tangerang',
+    'site' => 'https://www.niteanddayalamsutera.com',
+    'manage' => 'https://manage.niteanddayalamsutera.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'NITE & DAY Mangga Besar',
+    'site' => 'https://www.niteanddaymanggabesar.com',
+    'manage' => 'https://manage.niteanddaymanggabesar.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'ALL NITE & DAY Makassar',
+    'site' => 'https://www.allniteanddaymakassar.com',
+    'manage' => 'https://manage.allniteanddaymakassar.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'ALL NITE & DAY Gejayan Yogyakarta',
+    'site' => 'https://www.allniteanddayyogyakarta.com',
+    'manage' => 'https://manage.allniteanddayyogyakarta.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'ALL NITE & DAY Palembang Veteran',
+    'site' => 'https://www.allniteanddaypalembang.com',
+    'manage' => 'https://manage.allniteanddaypalembang.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'ALL NITE & DAY Residence Kebon Jeruk',
+    'site' => 'https://www.allniteanddaykebonjeruk.com',
+    'manage' => 'https://manage.allniteanddaykebonjeruk.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'MAXONE Ubud',
+    'site' => 'https://www.maxoneubud.com',
+    'manage' => 'https://manage.maxoneubud.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'MAXONE Bukit Jimbaran',
+    'site' => 'https://www.maxonejimbaran.com',
+    'manage' => 'https://manage.maxonejimbaran.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'MAXONE Balikpapan',
+    'site' => 'https://www.maxonebalikpapan.com',
+    'manage' => 'https://manage.maxonebalikpapan.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'MAXONE Dharmahusada Surabaya',
+    'site' => 'https://www.maxonedharmahusada.com',
+    'manage' => 'https://manage.maxonedharmahusada.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#d0da12'
+  ],
+  [
+    'name' => 'Vasaka Hotel Makassar Managed by Dafam',
+    'site' => 'https://www.vasakahotelmakassar.com',
+    'manage' => 'https://manage.vasakahotelmakassar.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#294b72'
+  ],
+  [
+    'name' => 'DAFAM Pacific Caesar Surabaya',
+    'site' => 'https://www.dafampacificcaesar.com',
+    'manage' => 'https://manage.dafampacificcaesar.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#0055b8'
+  ],
+  [
+    'name' => 'DAFAM Wonosobo',
+    'site' => 'https://www.dafamwonosobo.com',
+    'manage' => 'https://manage.dafamwonosobo.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#0055b8'
+  ],
+  [
+    'name' => 'DAFAM Cilacap',
+    'site' => 'https://www.dafamcilacap.com',
+    'manage' => 'https://manage.dafamcilacap.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#0055b8'
+  ],
+  [
+    'name' => 'MEOTEL Purwokerto',
+    'site' => 'https://www.meotelpurwokerto.com',
+    'manage' => 'https://manage.meotelpurwokerto.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#246147'
+  ],
+  [
+    'name' => 'MARLIN Hotel Pekalongan',
+    'site' => 'https://www.marlinpekalongan.com',
+    'manage' => 'https://manage.marlinpekalongan.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#0055b8'
+  ],
+  [
+    'name' => 'DAFAM Pekalongan',
+    'site' => 'https://www.dafampekalongan.com',
+    'manage' => 'https://manage.dafampekalongan.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#0055b8'
+  ],
+  [
+    'name' => 'DAFAM Semarang',
+    'site' => 'https://www.dafamsemarang.com',
+    'manage' => 'https://manage.dafamsemarang.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#0055b8'
+  ],
+  [
+    'name' => 'DAFAM Pekanbaru',
+    'site' => 'https://www.dafampekanbaru.com',
+    'manage' => 'https://manage.dafampekanbaru.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#0055b8'
+  ],
+  [
+    'name' => 'BOBOTEL Gatot Subroto Medan',
+    'site' => 'https://www.bobotelindonesia.com',
+    'manage' => 'https://manage.bobotelindonesia.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'Sparks Odeon Sukabumi, ARTOTEL Curated',
+    'site' => 'https://www.sparksodeonsukabumi.com',
+    'manage' => 'https://manage.sparksodeonsukabumi.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'ARTOTEL Casa Hangtuah',
+    'site' => 'https://www.artotelcasahangtuah.com',
+    'manage' => 'https://manage.artotelcasahangtuah.com',
+    'logo' => 'no-logo.png',
+    'logow' => 'no-logo.png',
+    'code' => 'CLXXX',
+    'color' => '#737C4D'
+  ],
+
+
+];

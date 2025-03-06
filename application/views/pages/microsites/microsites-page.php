@@ -16,7 +16,7 @@
 <body class="bg-light">
   <?php
   include 'microsites-data.php';
-  include 'microsites-template.php';  
+  include 'microsites-template.php';
   ?>
   <div class="bg-dark">
     <div class="container py-3">
@@ -37,12 +37,24 @@
             <button
               class="btn fs-7 text-dark rounded-0 px-4 active"
               data-bs-toggle="tab"
+              data-bs-target="#third-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="third-tab-pane"
+              aria-selected="true">
+              Batch #3
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn fs-7 text-dark rounded-0 px-4"
+              data-bs-toggle="tab"
               data-bs-target="#second-tab-pane"
               type="button"
               role="tab"
               aria-controls="second-tab-pane"
               aria-selected="true">
-              Generation #2
+              Batch #2
             </button>
           </div>
           <div class="col-auto">
@@ -54,7 +66,7 @@
               role="tab"
               aria-controls="first-tab-pane"
               aria-selected="false">
-              Generation #1
+              Batch #1
             </button>
           </div>
         </div>
@@ -81,7 +93,7 @@
             </div>
           </div>
           <div
-            class="tab-pane fade show active"
+            class="tab-pane fade"
             id="second-tab-pane"
             role="tabpanel"
             aria-labelledby="second-tab"
@@ -100,22 +112,55 @@
               }
               ?>
             </div>
+            <div class="pt-5 pb-4">
+              <span class="fs-8 text-secondary">
+                Information about the microsites (2) can be found
+              </span>
+              <a
+                href="https://drive.google.com/drive/folders/1OkjBuFs7x4bwlIOFA7HiemUN1RXPshE6"
+                class="fs-8 text-decoration-underline text-secondary"
+                target="_blank">
+                click here
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade show active"
+            id="third-tab-pane"
+            role="tabpanel"
+            ria-labelledby="third-tab"
+            tabindex="0">
+            <div class="row g-3">
+              <?php
+              foreach ($microsites_3 as $microsite) {
+                $output = $template;
+                $output = str_replace('{{name}}', $microsite['name'], $output);
+                $output = str_replace('{{code}}', $microsite['code'], $output);
+                $output = str_replace('{{color}}', $microsite['color'], $output);
+                $output = str_replace('{{site}}', $microsite['site'], $output);
+                $output = str_replace('{{manage}}', $microsite['manage'], $output);
+                $output = str_replace('{{logo}}', $microsite['logo'], $output);
+                echo $output;
+              }
+              ?>
+            </div>
+            <div class="pt-5 pb-4">
+              <span class="fs-8 text-secondary">
+                Information about the microsites (3) can be found
+              </span>
+              <a
+                href="https://docs.google.com/spreadsheets/d/1xBWZjRv2VPFnRkVNDyotu2oLjzJ9FHNKOz9rJ2dPdNU/edit?gid=1607529945#gid=1607529945"
+                class="fs-8 text-decoration-underline text-secondary"
+                target="_blank">
+                click here
+              </a>
+            </div>
           </div>
         </div>
       </div>
       <div class="py-4">
 
-      </div>
-      <div class="py-4">
-        <span class="fs-8 text-secondary">
-          Information about the microsites can be found
-        </span>
-        <a
-          href="https://drive.google.com/drive/folders/1OkjBuFs7x4bwlIOFA7HiemUN1RXPshE6"
-          class="fs-8 text-decoration-underline text-secondary"
-          target="_blank">
-          click here
-        </a>
       </div>
     </div>
   </div>

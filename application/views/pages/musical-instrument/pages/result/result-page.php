@@ -6,40 +6,15 @@
   </div>
 </div>
 <div class="bg-white">
-  <div class="row g-0">
-    <div class="col-12 col-md-3 col-lg-2">
-      <div class="rn-sticky-">
-        <div class="pt-4 px-4">
-          <div class="">
-            Filter
-          </div>
-        </div>
-        <?php
-        include(__DIR__ . '/../../mockup/data-filter.php');
-        foreach ($dataFilter as $catg => $item) {
-        ?>
-          <div class="py-2 px-4">
-            <div class="border-top pt-2 fs-7 fw-bold text-dark">
-              <?php echo $catg; ?>
-            </div>
-            <div class="py-2">
-              <?php foreach (array_slice($item, 0, 10) as $data) { ?>
-                <div class="fs-7 text-secondary">
-                  <?php echo $data; ?>
-                </div>
-              <?php } ?>
-            </div>
-          </div>
-        <?php
-        }
-        ?>
-      </div>
+  <div class="d-flex flex-wrap flex-lg-nowrap gap-0">
+    <div style="min-width: 280px;">
+       <?php include_once('result-filter.php'); ?>
     </div>
-    <div class="col-12 col-md-9 col-lg-10">
+    <div class="w-100">
       <div class="p-4">
         <div class="row g-4">
           <?php for ($i = 0; $i < 40; $i++) { ?>
-            <div class="col-6 col-lg-4 col-xl-3">
+            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
               <div class="p-0">
                 <div class="pb-2">
                   <a href="/musical-instrument/product/<?php echo $i; ?>" class="d-flex text-center w-100">
