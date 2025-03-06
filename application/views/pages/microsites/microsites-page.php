@@ -160,7 +160,48 @@
         </div>
       </div>
       <div class="py-4">
-
+        <?php
+        /*
+        foreach ($microsites_3 as $key => $microsite) {
+        ?>
+          <div class=""> &lt;Folder expanded="1"&gt;<?php echo $key < 9 ? '0' : ''; ?><?php echo $key + 1; ?>. <?php echo $microsite['name']; ?></div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;Server&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Host&gt;23.106.52.133&lt;/Host&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Port&gt;1188&lt;/Port&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Protocol&gt;1&lt;/Protocol&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Type&gt;0&lt;/Type&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;User&gt;11infoadm1&lt;/User&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Pass encoding="base64"&gt;cnBhY2hlaWl0ZWNoIQ==&lt;/Pass&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Logontype&gt;1&lt;/Logontype&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;EncodingType&gt;Auto&lt;/EncodingType&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;BypassProxy&gt;0&lt;/BypassProxy&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;<?php echo str_replace('https://','',$microsite['manage']);?>&lt;/Name&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Comments&gt;11infoadm1 rpacheiitech!&lt;/Comments&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;RemoteDir&gt;&lt;/RemoteDir&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;SyncBrowsing&gt;0&lt;/SyncBrowsing&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;DirectoryComparison&gt;0&lt;/DirectoryComparison&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Server&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;Server&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Host&gt;23.106.52.133&lt;/Host&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Port&gt;1188&lt;/Port&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Protocol&gt;1&lt;/Protocol&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Type&gt;0&lt;/Type&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;User&gt;11infoadm1&lt;/User&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Pass encoding="base64"&gt;cnBhY2hlaWl0ZWNoIQ==&lt;/Pass&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Logontype&gt;1&lt;/Logontype&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;EncodingType&gt;Auto&lt;/EncodingType&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;BypassProxy&gt;0&lt;/BypassProxy&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Name&gt;<?php echo str_replace('https://','',$microsite['site']);?>&lt;/Name&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Comments&gt;11infoadm1 rpacheiitech!&lt;/Comments&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;RemoteDir&gt;&lt;/RemoteDir&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;SyncBrowsing&gt;0&lt;/SyncBrowsing&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;DirectoryComparison&gt;0&lt;/DirectoryComparison&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Server&gt;</div>
+          <div>&lt;/Folder&gt;</div>
+        <?php
+        }
+        */
+        ?>
       </div>
     </div>
   </div>

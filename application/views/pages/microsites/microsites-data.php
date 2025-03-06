@@ -230,8 +230,8 @@ $microsites_3 = [
     'manage' => 'https://manage.thesetumbuexperience.com',
     'logo' => 'the-setumbu-experience.png',
     'logow' => 'the-setumbu-experience-w.png',
-    'code' => 'CLXXX',
-    'color' => '#1D4C6E'
+    'code' => 'CL270',
+    'color' => '#1D4C6E',
   ],
   [
     'name' => 'Grand DAFAM Braga Bandung',
@@ -239,7 +239,7 @@ $microsites_3 = [
     'manage' => 'https://manage.granddafambraga.com',
     'logo' => 'grand-dafam-braga.png',
     'logow' => 'grand-dafam-braga-w.png',
-    'code' => 'CLXXX',
+    'code' => 'CL271',
     'color' => '#a88b57'
   ],
   [
@@ -248,7 +248,7 @@ $microsites_3 = [
     'manage' => 'https://manage.granddafamancol.com',
     'logo' => 'grand-dafam-ancol.png',
     'logow' => 'grand-dafam-ancol-w.png',
-    'code' => 'CLXXX',
+    'code' => 'CL272',
     'color' => '#a88b57'
   ],
   [
@@ -257,7 +257,7 @@ $microsites_3 = [
     'manage' => 'https://manage.laksanahotelsolo.com',
     'logo' => 'laksana-hotel-solo.png',
     'logow' => 'laksana-hotel-solo-w.png',
-    'code' => 'CLXXX',
+    'code' => 'CL273',
     'color' => '#0055b8'
   ],
   [
@@ -266,7 +266,7 @@ $microsites_3 = [
     'manage' => 'https://manage.dafamriobandung.com',
     'logo' => 'dafam-rio-bandung.png',
     'logow' => 'dafam-rio-bandung-w.png',
-    'code' => 'CLXXX',
+    'code' => 'CL274',
     'color' => '#0055b8'
   ],
   [
@@ -275,7 +275,7 @@ $microsites_3 = [
     'manage' => 'https://manage.dafamresortbelitung.com',
     'logo' => 'dafam-resort-belitung.png',
     'logow' => 'dafam-resort-belitung-w.png',
-    'code' => 'CLXXX',
+    'code' => 'CL275',
     'color' => '#0055b8'
   ],
   [
@@ -284,7 +284,7 @@ $microsites_3 = [
     'manage' => 'https://manage.vasakahoteljakarta.com',
     'logo' => 'vasaka-hotel-jakarta.png',
     'logow' => 'vasaka-hotel-jakarta-w.png',
-    'code' => 'CLXXX',
+    'code' => 'CL276',
     'color' => '#294b72'
   ],
   [
@@ -293,7 +293,7 @@ $microsites_3 = [
     'manage' => 'https://manage.dafamenkadelijakarta.com',
     'logo' => 'dafam-enkadeli-jakarta.png',
     'logow' => 'dafam-enkadeli-jakarta-w.png',
-    'code' => 'CLXXX',
+    'code' => 'CL277',
     'color' => '#0055b8'
   ],
   [
@@ -302,7 +302,7 @@ $microsites_3 = [
     'manage' => 'https://manage.dafamexpressjaksajakarta.com',
     'logo' => 'dafam-express-jaksa-jakarta.png',
     'logow' => 'dafam-express-jaksa-jakarta-w.png',
-    'code' => 'CLXXX',
+    'code' => 'CL278',
     'color' => '#0055b8'
   ],
   [
@@ -311,7 +311,7 @@ $microsites_3 = [
     'manage' => 'https://manage.maxonejayapura.com',
     'logo' => 'maxone-jayapura.png',
     'logow' => 'maxone-jayapura-w.png',
-    'code' => 'CLXXX',
+    'code' => 'CL279',
     'color' => '#d0da12'
   ]
 
