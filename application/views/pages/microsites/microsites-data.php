@@ -317,100 +317,100 @@ $microsites_3 = [
 
 ];
 
-
-
-
 $microsites_4 = [
   [
     'name' => 'MAXONE Resort Makassar',
-    'site' => 'https://www.maxoneresortmakasaar.com',
-    'manage' => 'https://manage.maxoneresortmakasaar.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'site' => 'https://www.maxoneresortmakassar.com',
+    'manage' => 'https://manage.maxoneresortmakassar.com',
+    'logo' => 'maxone-resort-makassar.png',
+    'logow' => 'maxone-resort-makassar-.png',
+    'code' => 'CL280',
     'color' => '#d0da12'
   ],
   [
     'name' => 'MAXONE Tidar Surabaya',
     'site' => 'https://www.maxonetidar.com',
     'manage' => 'https://manage.maxonetidar.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'maxone-tidar.png',
+    'logow' => 'maxone-tidar-w.png',
+    'code' => 'CL281',
     'color' => '#d0da12'
   ],
   [
     'name' => 'MAXONE Loji Kridanggo Boyolali',
     'site' => 'https://www.maxonelojikridanggo.com',
     'manage' => 'https://manage.maxonelojikridanggo.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'maxone-loji-kridanggo.png',
+    'logow' => 'maxone-loji-kridanggo-w.png',
+    'code' => 'CL282',
     'color' => '#d0da12'
   ],
   [
     'name' => 'MAXONE Vivo Palembang',
     'site' => 'https://www.maxonevivopalembang.com',
     'manage' => 'https://manage.maxonevivopalembang.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'maxone-vivo-palembang.png',
+    'logow' => 'maxone-vivo-palembang-w.png',
+    'code' => 'CL283',
     'color' => '#d0da12'
   ],
   [
     'name' => 'MAXONE Kota Harapan Indah',
     'site' => 'https://www.maxonekotaharapanindah.com',
     'manage' => 'https://manage.maxonekotaharapanindah.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'maxone-kota-harapan-indah.png',
+    'logow' => 'maxone-kota-harapan-indah-w.png',
+    'code' => 'CL284',
     'color' => '#d0da12'
   ],
   [
     'name' => 'MAXONE Premier Melawai',
     'site' => 'https://www.maxonepremiermelawai.com',
     'manage' => 'https://manage.maxonepremiermelawai.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'maxone-premier-melawai.png',
+    'logow' => 'maxone-premier-melawai-w.png',
+    'code' => 'CL285',
     'color' => '#d0da12'
   ],
   [
     'name' => 'MAXONE Kramat',
     'site' => 'https://www.maxonekramat.com',
     'manage' => 'https://manage.maxonekramat.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'maxone-kramat.png',
+    'logow' => 'maxone-kramat-w.png',
+    'code' => 'CL286',
     'color' => '#d0da12'
   ],
   [
     'name' => 'MAXONE Sabang',
     'site' => 'https://www.maxonesabang.com',
     'manage' => 'https://manage.maxonesabang.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'maxone-sabang.png',
+    'logow' => 'maxone-sabang-w.png',
+    'code' => 'CL287',
     'color' => '#d0da12'
   ],
   [
     'name' => 'MAXONE  Platinum Hayam Wuruk',
     'site' => 'https://www.maxoneplatinumhayamwuruk.com',
     'manage' => 'https://manage.maxoneplatinumhayamwuruk.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'maxone-platinum-hayam-wuruk.png',
+    'logow' => 'maxone-platinum-hayam-wuruk-w.png',
+    'code' => 'CL288',
     'color' => '#d0da12'
   ],
   [
     'name' => 'MAXONE Dumai',
     'site' => 'https://www.maxonedumai.com',
     'manage' => 'https://manage.maxonedumai.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'maxone-dumai.png',
+    'logow' => 'maxone-dumai-w.png',
+    'code' => 'CL289',
     'color' => '#d0da12'
   ],
+];
+
+$microsites_5 = [
   [
     'name' => 'Zia Kuta',
     'site' => 'https://www.ziakuta.com',
@@ -681,6 +681,4 @@ $microsites_4 = [
     'code' => 'CLXXX',
     'color' => '#737C4D'
   ],
-
-
 ];
