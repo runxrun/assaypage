@@ -37,6 +37,18 @@
             <button
               class="btn fs-7 text-dark rounded-0 px-4 active"
               data-bs-toggle="tab"
+              data-bs-target="#fifth-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="fifth-tab-pane"
+              aria-selected="true">
+              Batch #5
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn fs-7 text-dark rounded-0 px-4"
+              data-bs-toggle="tab"
               data-bs-target="#fourth-tab-pane"
               type="button"
               role="tab"
@@ -169,7 +181,7 @@
             </div>
           </div>
           <div
-            class="tab-pane fade show active"
+            class="tab-pane fade"
             id="fourth-tab-pane"
             role="tabpanel"
             ria-labelledby="fourth-tab"
@@ -177,6 +189,38 @@
             <div class="row g-3">
               <?php
               foreach ($microsites_4 as $microsite) {
+                $output = $template;
+                $output = str_replace('{{name}}', $microsite['name'], $output);
+                $output = str_replace('{{code}}', $microsite['code'], $output);
+                $output = str_replace('{{color}}', $microsite['color'], $output);
+                $output = str_replace('{{site}}', $microsite['site'], $output);
+                $output = str_replace('{{manage}}', $microsite['manage'], $output);
+                $output = str_replace('{{logo}}', $microsite['logo'], $output);
+                echo $output;
+              }
+              ?>
+            </div>
+            <div class="pt-5 pb-4">
+              <span class="fs-8 text-secondary">
+                Information about the microsites (4) can be found
+              </span>
+              <a
+                href="https://docs.google.com/spreadsheets/d/1xBWZjRv2VPFnRkVNDyotu2oLjzJ9FHNKOz9rJ2dPdNU/edit?gid=1607529945#gid=1607529945"
+                class="fs-8 text-decoration-underline text-secondary"
+                target="_blank">
+                click here
+              </a>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade show active"
+            id="fifth-tab-pane"
+            role="tabpanel"
+            ria-labelledby="fourth-tab"
+            tabindex="0">
+            <div class="row g-3">
+              <?php
+              foreach ($microsites_5 as $microsite) {
                 $output = $template;
                 $output = str_replace('{{name}}', $microsite['name'], $output);
                 $output = str_replace('{{code}}', $microsite['code'], $output);
