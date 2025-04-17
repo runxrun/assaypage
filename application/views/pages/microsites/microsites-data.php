@@ -484,9 +484,9 @@ $microsites_5 = [
     'color' => '#000000'
   ],
   [
-    'name' => 'NITE & DAY Alam Sutera Tangerang',
-    'site' => 'https://www.niteanddayalamsutera.com',
-    'manage' => 'https://manage.niteanddayalamsutera.com',
+    'name' => 'ALL NITE & DAY Alam Sutera Tangerang',
+    'site' => 'https://www.allniteanddayalamsutera.com',
+    'manage' => 'https://manage.allniteanddayalamsutera.com',
     'logo' => 'nite-and-day-alam-sutera.png',
     'logow' => 'nite-and-day-alam-sutera-w.png',
     'code' => 'CL298',
@@ -508,38 +508,83 @@ $microsites_6 = [
     'name' => 'ALL NITE & DAY Makassar',
     'site' => 'https://www.allniteanddaymakassar.com',
     'manage' => 'https://manage.allniteanddaymakassar.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'all-nite-and-day-makassar.png',
+    'logow' => 'all-nite-and-day-makassar-w.png',
+    'code' => 'CL300',
     'color' => '#000000'
   ],
   [
     'name' => 'ALL NITE & DAY Gejayan Yogyakarta',
     'site' => 'https://www.allniteanddayyogyakarta.com',
     'manage' => 'https://manage.allniteanddayyogyakarta.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'all-nite-and-day-yogyakarta.png',
+    'logow' => 'all-nite-and-day-yogyakarta-w.png',
+    'code' => 'CL301',
     'color' => '#000000'
   ],
   [
     'name' => 'ALL NITE & DAY Palembang Veteran',
     'site' => 'https://www.allniteanddaypalembang.com',
     'manage' => 'https://manage.allniteanddaypalembang.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'all-nite-and-day-palembang.png',
+    'logow' => 'all-nite-and-day-palembang-w.png',
+    'code' => 'CL302',
     'color' => '#000000'
   ],
   [
     'name' => 'ALL NITE & DAY Residence Kebon Jeruk',
     'site' => 'https://www.allniteanddaykebonjeruk.com',
     'manage' => 'https://manage.allniteanddaykebonjeruk.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
+    'logo' => 'all-nite-and-day-kebon-jeruk.png',
+    'logow' => 'all-nite-and-day-kebon-jeruk-w.png',
+    'code' => 'CL303',
     'color' => '#000000'
   ],
+];
+
+$microsites_7 = [
+  [
+    'name' => 'BOBOTEL Gatot Subroto Medan',
+    'site' => 'https://www.bobotelindonesia.com',
+    'manage' => 'https://manage.bobotelindonesia.com',
+    'logo' => 'bobotel-indonesia.png',
+    'logow' => 'bobotel-indonesia-w.png',
+    'code' => 'CL317',
+    'color' => '#145e8c'
+  ],
+  [
+    'name' => 'Sparks Odeon Sukabumi, ARTOTEL Curated',
+    'site' => 'https://www.sparksodeonsukabumi.com',
+    'manage' => 'https://manage.sparksodeonsukabumi.com',
+    'logo' => 'sparks-odeon-sukabumi.png',
+    'logow' => 'sparks-odeon-sukabumi-w.png',
+    'code' => 'CL318',
+    'color' => '#5e833a'
+  ],
+  [
+    'name' => 'ARTOTEL Casa Hangtuah',
+    'site' => 'https://www.artotelcasahangtuah.com',
+    'manage' => 'https://manage.artotelcasahangtuah.com',
+    'logo' => 'artotel-casa-hangtuah.png',
+    'logow' => 'artotel-casa-hangtuah-w.png',
+    'code' => 'CL319',
+    'color' => '#737C4D'
+  ],
+];
+
+$microsites_8 = [
+  [
+    'name' => 'Sanur Watujimbar ARTOTEL Suites',
+    'site' => 'https://www.sanurwatujimbarartotelsuites.com',
+    'manage' => 'https://manage.sanurwatujimbarartotelsuites.com',
+    'logo' => 'sanur-watujimbar-artotel-suites.png',
+    'logow' => 'sanur-watujimbar-artotel-suites-w.png',
+    'code' => 'CL320',
+    'color' => '#373839'
+  ],
+];
+
+$microsites_x = [    
   [
     'name' => 'MAXONE Ubud',
     'site' => 'https://www.maxoneubud.com',
@@ -657,31 +702,5 @@ $microsites_6 = [
     'code' => 'CLXXX',
     'color' => '#0055b8'
   ],
-  [
-    'name' => 'BOBOTEL Gatot Subroto Medan',
-    'site' => 'https://www.bobotelindonesia.com',
-    'manage' => 'https://manage.bobotelindonesia.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
-    'color' => '#000000'
-  ],
-  [
-    'name' => 'Sparks Odeon Sukabumi, ARTOTEL Curated',
-    'site' => 'https://www.sparksodeonsukabumi.com',
-    'manage' => 'https://manage.sparksodeonsukabumi.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
-    'color' => '#000000'
-  ],
-  [
-    'name' => 'ARTOTEL Casa Hangtuah',
-    'site' => 'https://www.artotelcasahangtuah.com',
-    'manage' => 'https://manage.artotelcasahangtuah.com',
-    'logo' => 'no-logo.png',
-    'logow' => 'no-logo.png',
-    'code' => 'CLXXX',
-    'color' => '#737C4D'
-  ],
+
 ];
