@@ -29,7 +29,13 @@
   $modules = [
     [
       'name' => 'Table responsive',
+      'desc' => 'CSS for making the table responsive',
       'link' => '/modules/table-responsive',
+    ],
+    [
+      'name' => 'Menu Swipe',
+      'desc' => 'Swipe menu with horizontal scroll',
+      'link' => '/modules/swipe',
     ],
   ]
   ?>
@@ -38,12 +44,12 @@
     foreach ($modules as $key => $item) {
     ?>
       <div class="col-12 col-lg-3">
-        <div class="bg-white rounded-1">
+        <div class="bg-white h-100 rounded-1">
           <a
-            href="/modules/table-responsive"
+            href="<?php echo $item['link']; ?>"
             class="d-block p-4 text-center text-decoration-none">
-            <div class="pb-1 fs-7 fw-bold text-dark text-uppercase">Table responsive</div>
-            <div class="pb-0 fs-8 text-secondary">CSS for making the table responsive</div>
+            <div class="pb-1 fs-7 fw-bold text-dark text-uppercase"><?php echo $item['name'];?></div>
+            <div class="pb-0 fs-8 text-secondary"><?php echo $item['desc'];?></div>
           </a>
         </div>
       </div>

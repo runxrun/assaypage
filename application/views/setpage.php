@@ -31,6 +31,10 @@ switch (strtoupper($segment[0])) {
           $page = __DIR__ . '/pages/modules/components/infinite-scroll/index.php';
           $title = "Infinite Scroll - 無限スクロール";
           break;
+        case "SWIPE":
+          $page = __DIR__ . '/pages/modules/components/swipe/index.php';
+          $title = "Swipe - スワイプ";
+          break;
       }
     } else {
       $page = __DIR__ . '/pages/modules/modules-page.php';
