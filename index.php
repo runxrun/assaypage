@@ -29,6 +29,11 @@ $segment = isset($pathData) ? explode('/', preg_replace('~^/?(.*?)/?$~', '$1', $
 // $chkSegment=strtoupper($segment[$_dataLvl]);
 // echo $segment[0];
 
+if (strtoupper($segment[0]) === 'HOTEL-INFORMATION') {
+  require_once("application/views/pages/hotel-information/template.php");
+  return;
+}
+
 if (strtoupper($segment[0]) === 'MICROSITES') {
   require_once("application/views/pages/microsites/microsites-page.php");
   return;
