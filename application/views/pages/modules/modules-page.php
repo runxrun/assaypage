@@ -37,6 +37,11 @@
       'desc' => 'Swipe menu with horizontal scroll',
       'link' => '/modules/swipe',
     ],
+    [
+      'name' => 'Interactive Width Expansion',
+      'desc' => 'CSS width the element expand on hover',
+      'link' => '/modules/interactive-width-expansion',
+    ],
   ]
   ?>
   <div class="row">

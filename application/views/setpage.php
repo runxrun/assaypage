@@ -35,6 +35,10 @@ switch (strtoupper($segment[0])) {
           $page = __DIR__ . '/pages/modules/components/swipe/index.php';
           $title = "Swipe - スワイプ";
           break;
+        case "INTERACTIVE-WIDTH-EXPANSION":
+          $page = __DIR__ . '/pages/modules/components/interactive-width-expansion/index.php';
+          $title = "Interactive Width Expansion - インタラクティブな幅拡張";
+          break;
       }
     } else {
       $page = __DIR__ . '/pages/modules/modules-page.php';

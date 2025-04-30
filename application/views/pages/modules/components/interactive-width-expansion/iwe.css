@@ -1,0 +1,21 @@
+.rn-iwe {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 400px;
+  gap: 0.75rem;
+}
+
+.rn-iwe .rn-iwe-item {
+  height: 100%;
+  width: 25%;
+  transition: width 0.5s ease;
+}
+
+.rn-iwe .rn-iwe-item:hover {
+  width: 55%;
+}
+
+.rn-iwe .rn-iwe-item:hover ~ .rn-iwe-item {
+  width: 15%;
+}
