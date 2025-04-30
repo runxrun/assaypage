@@ -41,23 +41,15 @@
   $textCenter = 'text-align: center; ';
   $borderTop = 'border-top: 1px solid #d7d7d7; ';
   $borderBottom = 'border-bottom: 1px solid #d7d7d7; ';
-
-
-  $btnBook = 'background-color: #4285f4; border-radius: 0.25rem; text-decoration: none;';
-  // background-color: #C00; 
-  // border-radius: 0.25rem; 
-  // color: #ffffff; 
-  // text-decoration: none; 
-  // padding: 1rem 
-  // 2rem; 
-  // font-size: 0.9rem
-
-
+  $btnBook = 'background-color: #4285f4; border-radius: 0.25rem; text-decoration: none; ';
   ?>
   <div style="width:100%; background-color:#ffffff;">
-    <div style="<?php echo $py4 . $pageMargin . $pageSize . $fontFamily . $lhBase; ?>">
+    <div style="<?php echo $py4 . $pageMargin . $pageSize . $fontFamily . $lhBase; ?>">      
+      <div style="<?php echo $py4 . $borderTop . $textCenter; ?>">
+        <img src="https://santikajobs.com/admin/resource/uploads/gallery/original/logo-files-1539850564.png" alt="Amaris Hotel Pasar Baru" style="max-width: 200px;">
+      </div>
       <div style="<?php echo $pb4 ?>">
-        <table cellpadding="1" cellspacing="0">
+        <table cellpadding="1" cellspacing="0" align="center">
           <tr valign="top">
             <td>
               <div style="<?php echo $fs4 . $fwBold . $cDark; ?>">
