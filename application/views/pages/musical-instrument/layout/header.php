@@ -31,13 +31,26 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
+            <div class="p-0 position-relative">
+              <button
+                type="button"
+                class="btn border-0 py-0 px-3 fs-5 h-100 text-white"
+                onclick="window.location.href='/musical-instrument/cart/';">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <div class="position-absolute top-0 end-0">
+                <div class="bg-danger text-white fs-8 fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 22px; height: 22px;">
+                  1
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-auto order-2 order-md-3">
           <div class="fs-6 fw-bold text-white">
-            <button 
-              class="btn btn-outline-light border-0 fs-7 py-2" 
-              data-bs-toggle="offcanvas" 
+            <button
+              class="btn btn-outline-light border-0 fs-7 py-2"
+              data-bs-toggle="offcanvas"
               data-bs-target="#sidePanel">
               <i class="fa-solid fa-bars"></i>
             </button>
@@ -46,44 +59,46 @@
       </div>
     </div>
   </div>
-  <div class="p-0" style="background-color: rgba(255,255,255,0.1);">
-    <div class="container-fluid ">
-      <div class="d-flex flex-nowrap">
-        <div class="p-0">
-          <button
-            class="btn border-0 p-2 text-nowrap w-100"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasExample">
-            <div class="d-flex">
-              <div class="pe-2 fs-8 text-white"><i class="fa-solid fa-bars"></i></div>
-              <div class="pe-0 fs-8 text-white fw-bold">All</div>
-            </div>
-          </button>
-        </div>
-        <div class="flex-grow-1 overflow-hidden">
-          <div class="w-100">
-            <div id="keen-slider-submenu" class="keen-slider">
-              <?php
-              foreach ($dataSubMenu as $item) {
-                $categoryName = strtolower(str_replace(' ', '-', $item['name']));
-              ?>
-                <div
-                  class="keen-slider__slide"
-                  style="
+  <?php if (strtoupper($segment[1]) !== 'CART') { ?>
+    <div class="p-0" style="background-color: rgba(255,255,255,0.1);">
+      <div class="container-fluid ">
+        <div class="d-flex flex-nowrap">
+          <div class="p-0">
+            <button
+              class="btn border-0 p-2 text-nowrap w-100"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample">
+              <div class="d-flex">
+                <div class="pe-2 fs-8 text-white"><i class="fa-solid fa-bars"></i></div>
+                <div class="pe-0 fs-8 text-white fw-bold">All</div>
+              </div>
+            </button>
+          </div>
+          <div class="flex-grow-1 overflow-hidden">
+            <div class="w-100">
+              <div id="keen-slider-submenu" class="keen-slider">
+                <?php
+                foreach ($dataSubMenu as $item) {
+                  $categoryName = strtolower(str_replace(' ', '-', $item['name']));
+                ?>
+                  <div
+                    class="keen-slider__slide"
+                    style="
                     min-width: <?php echo strlen($item['name']) * 10 + 12; ?>px;
                     max-width: <?php echo strlen($item['name']) * 10 + 12; ?>px;
                   ">
-                  <button
-                    class="btn py-2 border-0 text-white fs-8 text-nowrap w-100"
-                    onclick="window.location.href='/musical-instrument/category/<?php echo $categoryName; ?>';">
-                    <?php echo $item['name']; ?>
-                  </button>
-                </div>
-              <?php } ?>
+                    <button
+                      class="btn py-2 border-0 text-white fs-8 text-nowrap w-100"
+                      onclick="window.location.href='/musical-instrument/category/<?php echo $categoryName; ?>';">
+                      <?php echo $item['name']; ?>
+                    </button>
+                  </div>
+                <?php } ?>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  <?php } ?>
 </div>
