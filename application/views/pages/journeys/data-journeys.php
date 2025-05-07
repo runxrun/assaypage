@@ -39,7 +39,7 @@ $dataJourneys = [
       ['name'=>'Phang Nga','nameLocale'=>'พังงา','been'=>true],
       ['name'=>'Phatthalung','nameLocale'=>'พัทลุง','been'=>false],
       ['name'=>'Phichit','nameLocale'=>'พิจิตร','been'=>false],
-      ['name'=>'Phitsanulok','nameLocale'=>'พิษณุโลก','been'=>false],
+      ['name'=>'Phitsanulok','nameLocale'=>'พิษณุโลก','been'=>true],
       ['name'=>'Phetchaburi','nameLocale'=>'เพชรบุรี','been'=>true],
       ['name'=>'Phetchabun','nameLocale'=>'เพชรบูรณ์','been'=>true],
       ['name'=>'Phrae','nameLocale'=>'แพร่','been'=>false],
