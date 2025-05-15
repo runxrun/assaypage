@@ -607,8 +607,8 @@ $microsites_9 = [
     'name' => 'Rooms Inc Sudirman',
     'site' => 'https://www.roomsincsudirman.com',
     'manage' => 'https://manage.roomsincsudirman.com',
-    'logo' => 'xxxxxxxxxxxxxxxxxx.png',
-    'logow' => 'xxxxxxxxxxxxxxxxxx-w.png',
+    'logo' => 'rooms-inc-sudirman.png',
+    'logow' => 'rooms-inc-sudirman-w.png',
     'code' => 'CL326',
     'color' => '#F0CA4C'
   ]
