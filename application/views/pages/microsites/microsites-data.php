@@ -581,10 +581,41 @@ $microsites_8 = [
     'logow' => 'sanur-watujimbar-artotel-suites-w.png',
     'code' => 'CL320',
     'color' => '#373839'
-  ],
+  ]
 ];
 
-$microsites_x = [    
+$microsites_9 = [
+  [
+    'name' => 'Artotel Pelangi Park',
+    'site' => 'https://www.artotelpelangipark.com',
+    'manage' => 'https://manage.artotelpelangipark.com',
+    'logo' => 'artotel-pelangi-park.png',
+    'logow' => 'artotel-pelangi-park-w.png',
+    'code' => 'CL324',
+    'color' => '#576855'
+  ],
+  [
+    'name' => 'Artotel Living World Cibubur',
+    'site' => 'https://www.artotellivingworldcibubur.com',
+    'manage' => 'https://manage.artotellivingworldcibubur.com',
+    'logo' => 'artotel-living-world-cibubur.png',
+    'logow' => 'artotel-living-world-cibubur-w.png',
+    'code' => 'CL325',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'Rooms Inc Sudirman',
+    'site' => 'https://www.roomsincsudirman.com',
+    'manage' => 'https://manage.roomsincsudirman.com',
+    'logo' => 'xxxxxxxxxxxxxxxxxx.png',
+    'logow' => 'xxxxxxxxxxxxxxxxxx-w.png',
+    'code' => 'CL326',
+    'color' => '#F0CA4C'
+  ]
+];
+
+
+$microsites_x = [
   [
     'name' => 'MAXONE Ubud',
     'site' => 'https://www.maxoneubud.com',
