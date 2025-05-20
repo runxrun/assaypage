@@ -586,21 +586,12 @@ $microsites_8 = [
 
 $microsites_9 = [
   [
-    'name' => 'Artotel Pelangi Park',
-    'site' => 'https://www.artotelpelangipark.com',
-    'manage' => 'https://manage.artotelpelangipark.com',
-    'logo' => 'artotel-pelangi-park.png',
-    'logow' => 'artotel-pelangi-park-w.png',
-    'code' => 'CL324',
-    'color' => '#576855'
-  ],
-  [
     'name' => 'Artotel Living World Cibubur',
     'site' => 'https://www.artotellivingworldcibubur.com',
     'manage' => 'https://manage.artotellivingworldcibubur.com',
     'logo' => 'artotel-living-world-cibubur.png',
     'logow' => 'artotel-living-world-cibubur-w.png',
-    'code' => 'CL325',
+    'code' => 'CL324',
     'color' => '#000000'
   ],
   [
@@ -609,8 +600,17 @@ $microsites_9 = [
     'manage' => 'https://manage.roomsincsudirman.com',
     'logo' => 'rooms-inc-sudirman.png',
     'logow' => 'rooms-inc-sudirman-w.png',
-    'code' => 'CL326',
+    'code' => 'CL325',
     'color' => '#F0CA4C'
+  ],
+  [
+    'name' => 'Artotel Pelangi Park',
+    'site' => 'https://www.artotelpelangipark.com',
+    'manage' => 'https://manage.artotelpelangipark.com',
+    'logo' => 'artotel-pelangi-park.png',
+    'logow' => 'artotel-pelangi-park-w.png',
+    'code' => 'CL326',
+    'color' => '#576855'
   ]
 ];
 
