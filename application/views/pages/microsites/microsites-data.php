@@ -611,6 +611,15 @@ $microsites_9 = [
     'logow' => 'artotel-pelangi-park-w.png',
     'code' => 'CL326',
     'color' => '#576855'
+  ],
+  [
+    'name' => 'Artotel Harmoni Jakarta',
+    'site' => 'https://www.artotelharmonijakarta.com',
+    'manage' => 'https://manage.artotelharmonijakarta.com',
+    'logo' => 'artotel-harmoni-jakarta.png',
+    'logow' => 'artotel-harmoni-jakarta-w.png',
+    'code' => 'CL329',
+    'color' => '#000000'
   ]
 ];
 
