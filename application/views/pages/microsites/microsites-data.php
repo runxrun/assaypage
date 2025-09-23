@@ -620,6 +620,15 @@ $microsites_9 = [
     'logow' => 'artotel-harmoni-jakarta-w.png',
     'code' => 'CL329',
     'color' => '#000000'
+  ],
+  [
+    'name' => 'Myze Hotel Waingapu',
+    'site' => 'https://www.myzehotelwaingapu.com',
+    'manage' => 'https://manage.myzehotelwaingapu.com',
+    'logo' => 'myze-hotel-waingapu.png',
+    'logow' => 'myze-hotel-waingapu-w.png',
+    'code' => 'CL331',
+    'color' => '#06abfb'
   ]
 ];
 
