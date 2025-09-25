@@ -13,12 +13,23 @@
     <div class="py-4">
       <div class="row g-3">
         <div class="col-12 col-lg-3">
+          <?php
+          $footerLinks = [
+            ["name" => "About Us", "link" => "/musical-instrument/about-us"],
+            ["name" => "Our Services", "link" => "/musical-instrument/our-services"],
+            ["name" => "Return and Exchange Policy", "link" => "/musical-instrument/return-and-exchange-policy"],
+            ["name" => "Cookies Policy", "link" => "/musical-instrument/cookies-policy"],
+            ["name" => "Contact Us", "link" => "/musical-instrument/contact-us"],
+          ];
+          ?>
           <div class="row g-1 fs-7 text-light">
-            <div class="col-12">About Us</div>
-            <div class="col-12">Our Services</div>
-            <div class="col-12">Return and Exchange Policy</div>
-            <div class="col-12">Cookies Policy</div>
-            <div class="col-12">Contact Us</div>
+            <?php foreach ($footerLinks as $link) { ?>
+              <div class="col-12">
+                <a href="<?php echo $link['link']; ?>" class="text-light text-decoration-none">
+                  <?php echo $link['name']; ?>
+                </a>
+              </div>
+            <?php } ?>
           </div>
         </div>
         <div class="col-12 col-lg-6">

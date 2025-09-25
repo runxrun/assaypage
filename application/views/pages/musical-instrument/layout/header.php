@@ -31,7 +31,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
-            <div class="p-0 position-relative">
+            <!-- <div class="p-0 position-relative">
               <button
                 type="button"
                 class="btn border-0 py-0 px-3 fs-5 h-100 text-white"
@@ -43,7 +43,7 @@
                   1
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="col-auto order-2 order-md-3">
