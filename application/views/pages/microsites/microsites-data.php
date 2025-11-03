@@ -638,9 +638,17 @@ $microsites_9 = [
     'logow' => 'fairview-by-artotel-w.png',
     'code' => 'CL332',
     'color' => '#000000'
+  ],
+  [
+    'name' => 'Nusatu by ARTOTEL - Semarang',
+    'site' => 'https://www.nusatuartotel.com',
+    'manage' => 'https://manage.nusatuartotel.com',
+    'logo' => 'nusatu-by-artotel.png',
+    'logow' => 'nusatu-by-artotel-w.png',
+    'code' => 'CL333',
+    'color' => '#22315b'
   ]
 ];
-
 
 $microsites_x = [
   [
