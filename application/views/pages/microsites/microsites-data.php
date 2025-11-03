@@ -629,6 +629,15 @@ $microsites_9 = [
     'logow' => 'myze-hotel-waingapu-w.png',
     'code' => 'CL331',
     'color' => '#06abfb'
+  ],
+  [
+    'name' => 'Fairview by ARTOTEL',
+    'site' => 'https://www.fairviewhotelbyartotel.com',
+    'manage' => 'https://manage.fairviewhotelbyartotel.com',
+    'logo' => 'fairview-by-artotel.png',
+    'logow' => 'fairview-by-artotel-w.png',
+    'code' => 'CL332',
+    'color' => '#000000'
   ]
 ];
 

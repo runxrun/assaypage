@@ -39,9 +39,10 @@ if (strtoupper($segment[0]) === 'MICROSITES') {
   return;
 }
 
-if (strtoupper($segment[0]) === 'MUSICAL-INSTRUMENT') {
-  $pathURL = '/application/views/pages/musical-instrument/';
-  require_once("application/views/pages/musical-instrument/template.php");
+if (strtoupper($segment[0]) === 'MUSICAL-INSTRUMENT') {  
+  header('Location: http://music-instrument.assaypage.com', true, 301);
+  // $pathURL = '/application/views/pages/musical-instrument/';
+  // require_once("application/views/pages/musical-instrument/template.php");
   return;
 }
 
