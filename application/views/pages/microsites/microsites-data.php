@@ -641,8 +641,8 @@ $microsites_9 = [
   ],
   [
     'name' => 'Nusatu by ARTOTEL - Semarang',
-    'site' => 'https://www.nusatuartotel.com',
-    'manage' => 'https://manage.nusatuartotel.com',
+    'site' => 'https://www.nusatubyartotel.com',
+    'manage' => 'https://manage.nusatubyartotel.com',
     'logo' => 'nusatu-by-artotel.png',
     'logow' => 'nusatu-by-artotel-w.png',
     'code' => 'CL333',
