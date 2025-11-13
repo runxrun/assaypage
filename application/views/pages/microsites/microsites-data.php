@@ -647,6 +647,15 @@ $microsites_9 = [
     'logow' => 'nusatu-by-artotel-w.png',
     'code' => 'CL333',
     'color' => '#22315b'
+  ],
+  [
+    'name' => 'Bono Hotel by ARTOTEL Pekanbaru',
+    'site' => 'https://www.bonobyartotel.com',
+    'manage' => 'https://manage.bonobyartotel.com',
+    'logo' => 'bono-hotel.png',
+    'logow' => 'bono-hotel-w.png',
+    'code' => 'CL334',
+    'color' => '#0f3643'
   ]
 ];
 
