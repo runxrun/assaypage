@@ -656,6 +656,33 @@ $microsites_9 = [
     'logow' => 'bono-hotel-w.png',
     'code' => 'CL334',
     'color' => '#0f3643'
+  ],
+  [
+    'name' => 'ARTOTEL Leguna Magelang',
+    'site' => 'https://www.artotellegunamagelang.com',
+    'manage' => 'https://manage.artotellegunamagelang.com',
+    'logo' => 'artotel-leguna-magelang.png',
+    'logow' => 'artotel-leguna-magelang-w.png',
+    'code' => 'CL335',
+    'color' => '#9b8c80'
+  ],
+  [
+    'name' => 'Paviliun Raden Saleh by ARTOTEL',
+    'site' => 'https://www.paviliunradensaleh.com',
+    'manage' => 'https://manage.paviliunradensaleh.com',
+    'logo' => 'paviliun-raden-saleh-by-artotel.png',
+    'logow' => 'paviliun-raden-saleh-by-artotel-w.png',
+    'code' => 'CL336',
+    'color' => '#2F442F'
+  ],
+  [
+    'name' => 'MAXONE Batam',
+    'site' => 'https://www.maxonebatam.com',
+    'manage' => 'https://manage.maxonebatam.com',
+    'logo' => 'maxone-batam.png',
+    'logow' => 'maxone-batam-w.png',
+    'code' => 'CL338',
+    'color' => '#d0da12'
   ]
 ];
 
