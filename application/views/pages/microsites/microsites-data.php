@@ -683,7 +683,25 @@ $microsites_9 = [
     'logow' => 'maxone-batam-w.png',
     'code' => 'CL338',
     'color' => '#d0da12'
-  ]
+  ],
+  [
+    'name' => 'ARTOTEL Living World Grand Wisata Bekasi',
+    'site' => 'https://www.artotellivingworldbekasi.com',
+    'manage' => 'https://manage.artotellivingworldbekasi.com',
+    'logo' => 'artotel-living-world-grand-wisata-bekasi.png',
+    'logow' => 'artotel-living-world-grand-wisata-bekasi-w.png',
+    'code' => 'CL339',
+    'color' => '#000000'
+  ],
+  [
+    'name' => 'Maisola by Artotel',
+    'site' => 'https://www.maisolabyartotel.com',
+    'manage' => 'https://manage.maisolabyartotel.com',
+    'logo' => 'maisola-by-artotel.png',
+    'logow' => 'maisola-by-artotel-w.png',
+    'code' => 'CL340',
+    'color' => '#3C3C3B'
+  ],
 ];
 
 $microsites_x = [
