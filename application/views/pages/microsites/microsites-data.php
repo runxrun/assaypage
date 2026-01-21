@@ -705,7 +705,7 @@ $microsites_9 = [
   [
     'name' => 'Pelangi Hotel at ARTOTEL Pelangi Park',
     'site' => 'https://hotel.artotelpelangipark.com',
-    'manage' => 'https://manage.maisolabyartotel.com',
+    'manage' => 'https://manage.hotel.artotelpelangipark.com',
     'logo' => 'artotel-pelangi-park.png',
     'logow' => 'artotel-pelangi-park-w.png',
     'code' => 'CL341',
