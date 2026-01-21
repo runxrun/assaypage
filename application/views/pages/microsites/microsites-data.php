@@ -702,6 +702,24 @@ $microsites_9 = [
     'code' => 'CL340',
     'color' => '#3C3C3B'
   ],
+  [
+    'name' => 'Pelangi Hotel at ARTOTEL Pelangi Park',
+    'site' => 'https://hotel.artotelpelangipark.com',
+    'manage' => 'https://manage.maisolabyartotel.com',
+    'logo' => 'artotel-pelangi-park.png',
+    'logow' => 'artotel-pelangi-park-w.png',
+    'code' => 'CL341',
+    'color' => '#576855'
+  ],
+  [
+    'name' => 'The Glamping @ARTOTEL Pelangi Park',
+    'site' => 'https://glamping.artotelpelangipark.com',
+    'manage' => 'https://manage.glamping.artotelpelangipark.com',
+    'logo' => 'artotel-pelangi-park.png',
+    'logow' => 'artotel-pelangi-park-w.png',
+    'code' => 'CL342',
+    'color' => '#576855'
+  ],
 ];
 
 $microsites_x = [
