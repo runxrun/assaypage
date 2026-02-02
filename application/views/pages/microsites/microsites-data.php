@@ -705,7 +705,7 @@ $microsites_9 = [
   [
     'name' => 'Pelangi Hotel at ARTOTEL Pelangi Park',
     'site' => 'https://hotel.artotelpelangipark.com',
-    'manage' => 'https://manage.hotel.artotelpelangipark.com',
+    'manage' => 'https://managehotel.artotelpelangipark.com',
     'logo' => 'artotel-pelangi-park.png',
     'logow' => 'artotel-pelangi-park-w.png',
     'code' => 'CL341',
@@ -714,11 +714,20 @@ $microsites_9 = [
   [
     'name' => 'The Glamping @ARTOTEL Pelangi Park',
     'site' => 'https://glamping.artotelpelangipark.com',
-    'manage' => 'https://manage.glamping.artotelpelangipark.com',
+    'manage' => 'https://manageglamping.artotelpelangipark.com',
     'logo' => 'artotel-pelangi-park.png',
     'logow' => 'artotel-pelangi-park-w.png',
     'code' => 'CL342',
     'color' => '#576855'
+  ],
+  [
+    'name' => 'Elais by ARTOTEL',
+    'site' => 'https://www.elaisbyartotel.com',
+    'manage' => 'https://manage.elaisbyartotel.com',
+    'logo' => 'elais-by-artotel.png',
+    'logow' => 'elais-by-artotel-w.png',
+    'code' => 'CL343',
+    'color' => '#688142'
   ],
 ];
 
