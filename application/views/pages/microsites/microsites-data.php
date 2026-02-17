@@ -729,6 +729,15 @@ $microsites_9 = [
     'code' => 'CL343',
     'color' => '#688142'
   ],
+  [
+    'name' => 'Grand Maya by ARTOTEL',
+    'site' => 'https://www.grandmayabyartotel.com',
+    'manage' => 'https://manage.grandmayabyartotel.com',
+    'logo' => 'grandmaya-by-artotel.png',
+    'logow' => 'grandmaya-by-artotel-w.png',
+    'code' => 'CL344',
+    'color' => '#3a6925'
+  ],
 ];
 
 $microsites_x = [
