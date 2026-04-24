@@ -738,6 +738,15 @@ $microsites_9 = [
     'code' => 'CL344',
     'color' => '#3a6925'
   ],
+  [
+    'name' => 'ARTOTEL Hayam Wuruk Surabaya',
+    'site' => 'https://www.artotelhayamwuruksurabaya.com',
+    'manage' => 'https://manage.artotelhayamwuruksurabaya.com',
+    'logo' => 'artotel-hayam-wuruk-surabaya.png',
+    'logow' => 'artotel-hayam-wuruk-surabaya-w.png',
+    'code' => 'CL347',
+    'color' => '#000000'
+  ],
 ];
 
 $microsites_x = [
