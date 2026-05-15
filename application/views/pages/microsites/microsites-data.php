@@ -747,6 +747,15 @@ $microsites_9 = [
     'code' => 'CL347',
     'color' => '#000000'
   ],
+  [
+    'name' => 'Maxone Rota Wahid Hasyim',
+    'site' => 'https://www.maxonerota.com',
+    'manage' => 'https://manage.maxonerota.com',
+    'logo' => 'maxone-rota-wahid-hasyim.png',
+    'logow' => 'maxone-rota-wahid-hasyim-w.png',
+    'code' => 'CL348',
+    'color' => '#d0da12'
+  ],
 ];
 
 $microsites_x = [
