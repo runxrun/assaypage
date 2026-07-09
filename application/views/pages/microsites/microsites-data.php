@@ -756,6 +756,24 @@ $microsites_9 = [
     'code' => 'CL348',
     'color' => '#d0da12'
   ],
+  [
+    'name' => 'Bromo Ayu Cottage by Artotel',
+    'site' => 'https://www.bromoayubyartotel.com',
+    'manage' => 'https://manage.bromoayubyartotel.com',
+    'logo' => 'bromoayubyartotel.png',
+    'logow' => 'bromoayubyartotel-w.png',
+    'code' => 'CL351',
+    'color' => '#4A5937'
+  ],
+  [
+    'name' => 'ARTOTEL Grand Prima Surabaya',
+    'site' => 'https://www.artotelgrandprimasurabaya.com',
+    'manage' => 'https://manage.artotelgrandprimasurabaya.com',
+    'logo' => 'artotel-grand-prima-surabaya.png',
+    'logow' => 'artotel-grand-prima-surabaya-w.png',
+    'code' => 'CL352',
+    'color' => '#000000'
+  ],
 ];
 
 $microsites_x = [
