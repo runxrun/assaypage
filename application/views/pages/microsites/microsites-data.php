@@ -774,6 +774,15 @@ $microsites_9 = [
     'code' => 'CL352',
     'color' => '#000000'
   ],
+  [
+    'name' => 'ARTOTEL Wanasaba',
+    'site' => 'https://www.artotelwanasaba.com',
+    'manage' => 'https://manage.artotelwanasaba.com',
+    'logo' => 'artotel-wanasaba.png',
+    'logow' => 'artotel-wanasaba-w.png',
+    'code' => 'CL353',
+    'color' => '#4c6c8b'
+  ],
 ];
 
 $microsites_x = [
