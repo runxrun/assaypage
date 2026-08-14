@@ -783,6 +783,15 @@ $microsites_9 = [
     'code' => 'CL353',
     'color' => '#4c6c8b'
   ],
+  [
+    'name' => 'La Lisa Hotel by ARTOTEL',
+    'site' => 'https://www.lalisabyartotel.com',
+    'manage' => 'https://manage.lalisabyartotel.com',
+    'logo' => 'lalisa-hotel-by-artotel.png',
+    'logow' => 'lalisa-hotel-by-artotel-w.png',
+    'code' => 'CL354',
+    'color' => '#311d16'
+  ],
 ];
 
 $microsites_x = [
