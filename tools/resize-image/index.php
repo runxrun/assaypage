@@ -123,6 +123,25 @@ if (isset($_GET['api']) || isset($_POST['api'])) {
         exit;
     }
 
+    // 2.1 Clear Thumbnail Cache
+    if ($action === 'clear_cache') {
+        $thumbDir = $imagesDir . '/.thumb_cache';
+        $deleted = 0;
+        if (is_dir($thumbDir)) {
+            $files = glob($thumbDir . '/*');
+            if ($files) {
+                foreach ($files as $f) {
+                    if (is_file($f)) {
+                        @unlink($f);
+                        $deleted++;
+                    }
+                }
+            }
+        }
+        echo json_encode(['success' => true, 'deleted_count' => $deleted]);
+        exit;
+    }
+
     // 3. Process single file (Resize, Rename, Convert)
     if ($action === 'process') {
         $file = basename($_POST['file'] ?? '');
@@ -484,6 +503,12 @@ function processWithGd($src, $dest, $options, &$outW, &$outH) {
         </div>
 
         <div class="flex items-center gap-2">
+          <button onclick="clearThumbCache(true)" id="btn-clear-cache" title="Clear generated preview thumbnails" class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium bg-slate-800/80 hover:bg-rose-950/40 text-slate-300 hover:text-rose-300 rounded-lg border border-slate-700 hover:border-rose-700/50 shadow-sm transition">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+            </svg>
+            <span>Clear Cache</span>
+          </button>
           <button onclick="scanImages()" id="btn-refresh" class="inline-flex items-center gap-2 px-3.5 py-2 text-sm font-medium bg-slate-800/80 hover:bg-slate-700/90 text-slate-200 rounded-lg border border-slate-700 shadow-sm transition">
             <svg class="w-4 h-4 text-sky-400" id="icon-refresh" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
@@ -1186,11 +1211,33 @@ function processWithGd($src, $dest, $options, &$outW, &$outH) {
       btnProcess.disabled = false;
       btnProcess.classList.remove('opacity-50', 'cursor-not-allowed');
 
+      // Auto-clear cache after finishing batch process so cache is clean
+      await clearThumbCache(false);
+
       // Rescan images directory after a short delay so table refreshes to new filenames
       setTimeout(() => {
-        // If files were renamed or converted, refresh scan with current target ext
         scanImages();
-      }, 1500);
+      }, 1000);
+    }
+
+    async function clearThumbCache(showAlert = true) {
+      try {
+        const formData = new FormData();
+        formData.append('api', '1');
+        formData.append('action', 'clear_cache');
+
+        const res = await fetch('index.php', {
+          method: 'POST',
+          body: formData
+        });
+        const data = await res.json();
+        if (data.success && showAlert) {
+          alert(`Cleared ${data.deleted_count} cached thumbnail file(s) successfully.`);
+          scanImages();
+        }
+      } catch (e) {
+        console.error('Error clearing thumb cache:', e);
+      }
     }
 
     function stopProcessing() {

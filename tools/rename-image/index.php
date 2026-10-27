@@ -63,6 +63,24 @@ if (isset($_GET['api']) || isset($_POST['api'])) {
         exit;
     }
 
+    if ($action === 'clear_cache') {
+        $thumbDir = $imagesDir . '/.thumb_cache';
+        $deleted = 0;
+        if (is_dir($thumbDir)) {
+            $files = glob($thumbDir . '/*');
+            if ($files) {
+                foreach ($files as $f) {
+                    if (is_file($f)) {
+                        @unlink($f);
+                        $deleted++;
+                    }
+                }
+            }
+        }
+        echo json_encode(['success' => true, 'deleted_count' => $deleted]);
+        exit;
+    }
+
     if ($action === 'rename_single') {
         $oldFile = basename($_POST['file'] ?? '');
         $newFile = basename($_POST['target_name'] ?? '');
@@ -140,6 +158,9 @@ function formatBytes($bytes, $precision = 2) {
             </svg>
             <span>Need Resizing? Open Resize Tool &rarr;</span>
           </a>
+          <button onclick="clearThumbCache()" id="btn-clear-cache" title="Clear thumbnail cache" class="inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium bg-slate-800/80 hover:bg-rose-950/40 text-slate-300 hover:text-rose-300 rounded-lg border border-slate-700 hover:border-rose-700/50 transition">
+            <span>Clear Cache</span>
+          </button>
           <button onclick="scanImages()" id="btn-refresh" class="inline-flex items-center gap-2 px-3.5 py-2 text-sm font-medium bg-slate-800/80 hover:bg-slate-700/90 text-slate-200 rounded-lg border border-slate-700 transition">
             <span>Refresh</span>
           </button>
@@ -375,7 +396,24 @@ function formatBytes($bytes, $precision = 2) {
         renderTable();
       }
 
-      setTimeout(() => scanImages(), 1500);
+      await clearThumbCache(false);
+      setTimeout(() => scanImages(), 1000);
+    }
+
+    async function clearThumbCache(showAlert = true) {
+      try {
+        const formData = new FormData();
+        formData.append('api', '1');
+        formData.append('action', 'clear_cache');
+        const res = await fetch('index.php', { method: 'POST', body: formData });
+        const data = await res.json();
+        if (data.success && showAlert) {
+          alert(`Cleared ${data.deleted_count} cached thumbnail file(s) successfully.`);
+          scanImages();
+        }
+      } catch (e) {
+        console.error(e);
+      }
     }
 
     updateExample();
