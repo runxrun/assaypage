@@ -22,6 +22,14 @@
               'name' => 'Rename Image',
               'url' => 'rename-image/',
             ],
+            [
+              'name' => 'Kliknbook Supplier Ref. Duplicate',
+              'url' => 'kliknbook-supplier-ref-duplicate/',
+            ],
+            [
+              'name' => 'Check Duplicate',
+              'url' => 'check-duplicate/',
+            ],
           ],
         ];
 
