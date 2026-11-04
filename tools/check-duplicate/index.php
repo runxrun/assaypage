@@ -1,5 +1,6 @@
 <?php
 ini_set('display_errors', 1);
+error_reporting(E_ALL);
 header('Content-Type: text/html; charset=UTF-8');
 
 // โหลดไฟล์ JSON
@@ -8,14 +9,15 @@ if (!file_exists($jsonPath)) {
     $jsonPath = __DIR__ . '/../kliknbook-supplier-ref-duplicate/kliknbook_duplicate_bookings.json';
 }
 
-$rawData = [];
+$rawData = array();
 if (file_exists($jsonPath)) {
     $jsonContent = file_get_contents($jsonPath);
-    $rawData = json_decode($jsonContent, true) ?? [];
+    $decoded = json_decode($jsonContent, true);
+    $rawData = is_array($decoded) ? $decoded : array();
 }
 
 // คอลัมน์ทั้งหมดที่แสดงในตาราง
-$columns = [
+$columns = array(
     'supplier_ref' => 'เลขที่ส่งให้ Channel (Supplier Ref)',
     'channel'      => 'Channel',
     'file_no'      => 'File No',
@@ -24,12 +26,12 @@ $columns = [
     'hotel'        => 'โรงแรม',
     'checkin'      => 'เช็คอิน',
     'status'       => 'สถานะในระบบ',
-];
+);
 
 // ฟังก์ชันแปลงวันที่ภาษาไทย (เช่น "3 พ.ย. 2569") เป็นรูปแบบ YYYY-MM-DD เพื่อใช้เรียงลำดับที่ถูกต้อง
-function thaiDateToSortable(string $thaiDate): string
+function thaiDateToSortable($thaiDate)
 {
-    $thaiMonths = [
+    $thaiMonths = array(
         'ม.ค.'  => '01',
         'ก.พ.'  => '02',
         'มี.ค.' => '03',
@@ -42,33 +44,33 @@ function thaiDateToSortable(string $thaiDate): string
         'ต.ค.'  => '10',
         'พ.ย.'  => '11',
         'ธ.ค.'  => '12',
-    ];
+    );
 
-    $parts = preg_split('/\s+/', trim($thaiDate));
+    $parts = preg_split('/\s+/', trim((string)$thaiDate));
     if (count($parts) === 3) {
         $day   = str_pad($parts[0], 2, '0', STR_PAD_LEFT);
-        $month = $thaiMonths[$parts[1]] ?? '00';
+        $month = isset($thaiMonths[$parts[1]]) ? $thaiMonths[$parts[1]] : '00';
         $year  = $parts[2];
         return "{$year}-{$month}-{$day}";
     }
-    return $thaiDate;
+    return (string)$thaiDate;
 }
 
 // นับจำนวนรายการที่มี Supplier Ref ซ้ำกัน เพื่อทำสีเน้นกลุ่มข้อมูล
-$supplierRefCounts = [];
+$supplierRefCounts = array();
 foreach ($rawData as $row) {
-    $ref = $row['เลขที่ส่งให้ Channel (Supplier Ref)'] ?? '';
+    $ref = isset($row['เลขที่ส่งให้ Channel (Supplier Ref)']) ? $row['เลขที่ส่งให้ Channel (Supplier Ref)'] : '';
     if ($ref !== '') {
-        $supplierRefCounts[$ref] = ($supplierRefCounts[$ref] ?? 0) + 1;
+        $supplierRefCounts[$ref] = (isset($supplierRefCounts[$ref]) ? $supplierRefCounts[$ref] : 0) + 1;
     }
 }
 
 // รับค่า Filter และ Sort จาก URL Query ($_GET)
-$search        = trim($_GET['q'] ?? '');
-$filterChannel = trim($_GET['channel'] ?? '');
-$filterStatus  = trim($_GET['status'] ?? '');
-$sortKey       = $_GET['sort'] ?? '';
-$sortDir       = strtolower($_GET['dir'] ?? 'asc') === 'desc' ? 'desc' : 'asc';
+$search        = trim(isset($_GET['q']) ? $_GET['q'] : '');
+$filterChannel = trim(isset($_GET['channel']) ? $_GET['channel'] : '');
+$filterStatus  = trim(isset($_GET['status']) ? $_GET['status'] : '');
+$sortKey       = isset($_GET['sort']) ? $_GET['sort'] : '';
+$sortDir       = strtolower(isset($_GET['dir']) ? $_GET['dir'] : 'asc') === 'desc' ? 'desc' : 'asc';
 
 if ($sortKey !== '' && !isset($columns[$sortKey])) {
     $sortKey = '';
@@ -81,10 +83,13 @@ $allStatuses = array_values(array_unique(array_filter(array_column($rawData, '�
 
 // กรองข้อมูล (Filter)
 $filteredData = array_filter($rawData, function ($row) use ($search, $filterChannel, $filterStatus) {
-    if ($filterChannel !== '' && ($row['Channel'] ?? '') !== $filterChannel) {
+    $rowChannel = isset($row['Channel']) ? $row['Channel'] : '';
+    $rowStatus  = isset($row['สถานะในระบบ']) ? $row['สถานะในระบบ'] : '';
+
+    if ($filterChannel !== '' && $rowChannel !== $filterChannel) {
         return false;
     }
-    if ($filterStatus !== '' && ($row['สถานะในระบบ'] ?? '') !== $filterStatus) {
+    if ($filterStatus !== '' && $rowStatus !== $filterStatus) {
         return false;
     }
     if ($search !== '') {
@@ -105,8 +110,8 @@ $filteredData = array_values($filteredData);
 if ($sortKey !== '') {
     $fieldName = $columns[$sortKey];
     usort($filteredData, function ($a, $b) use ($fieldName, $sortKey, $sortDir) {
-        $valA = (string)($a[$fieldName] ?? '');
-        $valB = (string)($b[$fieldName] ?? '');
+        $valA = (string)(isset($a[$fieldName]) ? $a[$fieldName] : '');
+        $valB = (string)(isset($b[$fieldName]) ? $b[$fieldName] : '');
 
         if ($sortKey === 'checkin') {
             $cmp = strcmp(thaiDateToSortable($valA), thaiDateToSortable($valB));
@@ -119,7 +124,7 @@ if ($sortKey !== '') {
 }
 
 // ฟังก์ชันสร้าง URL สำหรับคลิกหัวตารางเพื่อเรียงลำดับ
-function buildSortUrl(string $colKey, string $currentSort, string $currentDir): string
+function buildSortUrl($colKey, $currentSort, $currentDir)
 {
     $nextDir = ($currentSort === $colKey && $currentDir === 'asc') ? 'desc' : 'asc';
     $params = $_GET;
@@ -309,16 +314,16 @@ $uniqueSupplierRefs = count(array_unique(array_column($filteredData, 'เลข�
                                 </tr>
                             <?php else: ?>
                                 <?php foreach ($filteredData as $idx => $row):
-                                    $supplierRef = $row['เลขที่ส่งให้ Channel (Supplier Ref)'] ?? '';
-                                    $channel     = $row['Channel'] ?? '';
-                                    $fileNo      = $row['File No'] ?? '';
-                                    $agent       = $row['Agent'] ?? '';
-                                    $osRef       = $row['O/S Ref'] ?? '';
-                                    $hotel       = $row['โรงแรม'] ?? '';
-                                    $checkin     = $row['เช็คอิน'] ?? '';
-                                    $status      = $row['สถานะในระบบ'] ?? '';
+                                    $supplierRef = isset($row['เลขที่ส่งให้ Channel (Supplier Ref)']) ? $row['เลขที่ส่งให้ Channel (Supplier Ref)'] : '';
+                                    $channel     = isset($row['Channel']) ? $row['Channel'] : '';
+                                    $fileNo      = isset($row['File No']) ? $row['File No'] : '';
+                                    $agent       = isset($row['Agent']) ? $row['Agent'] : '';
+                                    $osRef       = isset($row['O/S Ref']) ? $row['O/S Ref'] : '';
+                                    $hotel       = isset($row['โรงแรม']) ? $row['โรงแรม'] : '';
+                                    $checkin     = isset($row['เช็คอิน']) ? $row['เช็คอิน'] : '';
+                                    $status      = isset($row['สถานะในระบบ']) ? $row['สถานะในระบบ'] : '';
 
-                                    $dupCount    = $supplierRefCounts[$supplierRef] ?? 1;
+                                    $dupCount    = isset($supplierRefCounts[$supplierRef]) ? $supplierRefCounts[$supplierRef] : 1;
 
                                     // สี Badge ของสถานะ (สำหรับ Light Theme)
                                     $statusBadgeClass = 'bg-emerald-50 text-emerald-700 border-emerald-200';

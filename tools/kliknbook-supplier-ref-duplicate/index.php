@@ -131,7 +131,7 @@ function xlsxToJson($filename, $outputJsonFile = null)
 }
 
 // ระบุชื่อไฟล์ Excel ต้นทาง และชื่อไฟล์ JSON ปลายทาง
-$inputFile = __DIR__ . '/kliknbook_supplier_reference_duplicate_31_pages_full.xlsx';
+$inputFile = __DIR__ . '/kliknbook-supplier-reference-duplicate-20261103.pdf';
 $outputFile = __DIR__ . '/kliknbook_duplicate_bookings.json';
 
 xlsxToJson($inputFile, $outputFile);
